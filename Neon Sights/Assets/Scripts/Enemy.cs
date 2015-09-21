@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-
+    public Transform player;
+    public float rotationDamping;
     public float spreadFactor;
     public float delayTime = .2f;
     private float counter = 0;
@@ -32,8 +33,9 @@ public class Enemy : MonoBehaviour {
             attack();
             counter = 0;
         }
-        
 
+        Quaternion rotation = Quaternion.LookRotation(player.position - transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationDamping);
 	}
 
 
