@@ -6,11 +6,13 @@ public class ShootAtClickPosition : MonoBehaviour
 	public Rigidbody bullet;
 	public float force = 10.0f;
 	public ForceMode forceMode;
+	public Texture2D reticle;
+	//public CursorMode reticle;
 
 	// Use this for initialization
 	void Start ()
 	{
-	
+		Cursor.SetCursor (reticle, Vector2.zero, CursorMode.Auto);
 	}
 	
 	// Update is called once per frame
@@ -26,5 +28,8 @@ public class ShootAtClickPosition : MonoBehaviour
 			Rigidbody instance = Instantiate(bullet,transform.position,rotation) as Rigidbody;
 			instance.AddForce(ray.direction*force, forceMode);
 		}
+
 	}
+	
 }
+
