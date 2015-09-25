@@ -4,6 +4,7 @@ using System.Collections;
 public class HealthScript : MonoBehaviour {
 
     public float health;
+	public GameObject bar;
     //public static bool isPlayerAlive = true;
 	
 	void Start () {
@@ -12,10 +13,10 @@ public class HealthScript : MonoBehaviour {
 	
 	
 	void Update () {
-	
+		bar.GetComponent<RectTransform>().localScale = new Vector3(1,health/100f,1);
         if(health < 0f)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 	}
 }
