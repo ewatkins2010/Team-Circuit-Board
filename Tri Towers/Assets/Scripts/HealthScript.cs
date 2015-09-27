@@ -2,21 +2,26 @@
 using System.Collections;
 
 public class HealthScript : MonoBehaviour {
-
+	//making a slider for testing in the inspector
+	[Range(0,100)]
     public float health;
+
 	public GameObject bar;
     //public static bool isPlayerAlive = true;
 	
 	void Start () {
-	
+
 	}
 	
 	
 	void Update () {
+		//adjusting the bar based on the health value
 		bar.GetComponent<RectTransform>().localScale = new Vector3(1,health/100f,1);
-        if(health < 0f)
-        {
-            //Destroy(gameObject);
-        }
+
+		//keeping the health between 0 and 100
+		if (health > 100)
+			health = 100;
+		if (health < 0)
+			health = 0;
 	}
 }
