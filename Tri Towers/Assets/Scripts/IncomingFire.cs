@@ -8,7 +8,7 @@ public class IncomingFire : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-	
+		Destroy (gameObject, 3f);
 	}
 	
 	// Update is called once per frame
@@ -18,11 +18,17 @@ public class IncomingFire : MonoBehaviour
 
 	}
 
-	void OnCollisionEnter()
+	void OnCollisionEnter(Collision col)
 	{
-		if(gibOnCollision)
+		/*if(gibOnCollision)
 		{
 			Destroy(gameObject);
+		}*/
+		Debug.Log ("hit something");
+		Debug.Log (col.gameObject.name);
+		if (col.gameObject.tag == "Player") {
+			col.gameObject.GetComponentInChildren<HealthScript>().health-=10f;
 		}
+		Destroy (gameObject);
 	}
 }

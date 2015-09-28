@@ -16,7 +16,8 @@ public class HealthScript : MonoBehaviour {
 	
 	void Update () {
 		//adjusting the bar based on the health value
-		bar.GetComponent<RectTransform>().localScale = new Vector3(1,health/100f,1);
+		if (bar!=null)
+			bar.GetComponent<RectTransform>().localScale = new Vector3(1,health/100f,1);
 
 		//keeping the health between 0 and 100
 		if (health > 100)

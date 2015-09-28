@@ -45,7 +45,8 @@ public class PickUps : MonoBehaviour {
 			}
 		}
 		//play the sound for the pickup right before it is destroyed
-		a.Play ();
+		if (a!=null)
+			a.Play ();
 		Destroy (gameObject);
 	}
 }

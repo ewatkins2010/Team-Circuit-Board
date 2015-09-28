@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Shooting : MonoBehaviour
 
 	//ammo will eventually increase when you shoot an ammo pickup. 
 	public int ammo, gunType;
+	public Text ammoDisplay;
 
 	//drag in all of the reticles into this array. they should be set as cursors and not textures or sprites
 	//hotspot is the center of the reticle
@@ -34,7 +36,7 @@ public class Shooting : MonoBehaviour
 	void Update ()
 	{
 		//Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, GetComponent<Camera>().nearClipPlane));
-
+		ammoDisplay.text = ammo + "";
 		//if the gun can fire, then shoot
 		if (canFire){
 		switch (gunType){
@@ -54,7 +56,7 @@ public class Shooting : MonoBehaviour
 			case 2:
 				Cursor.SetCursor (reticles[2], hotspot, CursorMode.Auto);
 				if(Input.GetMouseButton(0))
-					StartCoroutine (fire (1f, bigBullet, 2f));
+					StartCoroutine (fire (1f, bigBullet, 1.3f));
 				break;
 			default:
 				break;
