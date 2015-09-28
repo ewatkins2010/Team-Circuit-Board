@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\AdvanceOnNoChildren.cs" />
      <Compile Include="Assets\Scripts\AlphaNumericSort.cs" />
      <Compile Include="Assets\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\CubeShootAfterDelay.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\GibOnCollide.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
