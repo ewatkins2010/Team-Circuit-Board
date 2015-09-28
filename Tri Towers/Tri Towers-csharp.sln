@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{0370E3AD-CC80-C0A9-2903-164F4B9FC5CE}") = "Tri Towers", "Assembly-CSharp-vs.csproj", "{B13AD8A8-EECA-8F21-3E13-5F7F55ADE5A0}"
 EndProject
+Project("{0370E3AD-CC80-C0A9-2903-164F4B9FC5CE}") = "Tri Towers", "Assembly-CSharp-Editor-vs.csproj", "{F6D4496B-FDA0-F901-4F58-EB06A18CAC90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{B13AD8A8-EECA-8F21-3E13-5F7F55ADE5A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B13AD8A8-EECA-8F21-3E13-5F7F55ADE5A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B13AD8A8-EECA-8F21-3E13-5F7F55ADE5A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D4496B-FDA0-F901-4F58-EB06A18CAC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D4496B-FDA0-F901-4F58-EB06A18CAC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D4496B-FDA0-F901-4F58-EB06A18CAC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D4496B-FDA0-F901-4F58-EB06A18CAC90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																															GlobalSection(MonoDevelopProperties) = preSolution
+																																			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
