@@ -32,3 +32,9 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 [Tt]humbs.db
+*.csproj
+Tri Towers/Assembly-CSharp-Editor.csproj
+*.sln
+Tri Towers/Tri Towers-csharp.sln
+*.csproj
+*.csproj
