@@ -46,9 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AdvanceAfterDelay.cs" />
-     <Compile Include="Assets\Scripts\AdvanceOnNoChildren.cs" />
-     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CubeShootAfterDelay.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\GibOnCollide.cs" />
@@ -58,8 +55,12 @@
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\NodeMovement.cs" />
+     <Compile Include="Assets\Scripts\Patrol Scripts\EnemyPatrol.cs" />
+     <Compile Include="Assets\Scripts\Patrol Scripts\Waypoints.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\PickUps.cs" />
+     <Compile Include="Assets\Scripts\PlayerAdvanceScripts\AdvanceAfterDelay.cs" />
+     <Compile Include="Assets\Scripts\PlayerAdvanceScripts\AdvanceOnNoChildren.cs" />
      <Compile Include="Assets\Scripts\Projectiles.cs" />
      <Compile Include="Assets\Scripts\ShootAfterDelay.cs" />
      <Compile Include="Assets\Scripts\ShootAtClickPosition.cs" />

@@ -496,6 +496,8 @@ GameObject:
   - 135: {fileID: 13539158}
   - 114: {fileID: 11454900}
   - 114: {fileID: 11489510}
+  - 114: {fileID: 11446944}
+  - 54: {fileID: 5434234}
   m_Layer: 10
   m_Name: Sphere_turret
   m_TagString: Enemy
@@ -1024,7 +1026,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166686}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: 3.08999991, y: 1.00999999, z: -.100000001}
+  m_LocalPosition: {x: 21.3899994, y: .720000029, z: -9}
   m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children:
   - {fileID: 447666}
@@ -1270,6 +1272,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121658}
   m_Mesh: {fileID: 4300004, guid: b5af35cbe7d48eb4486b0adcdc6873ea, type: 3}
+--- !u!54 &5434234
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166686}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &9552146
 Animator:
   serializedVersion: 3
@@ -1287,6 +1304,25 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11446944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d45a76ceab47954faabcaec45a05ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints: []
+  Speed: 0
+  curWayPoint: 0
+  doPatrol: 1
+  Target: {x: 0, y: 0, z: 0}
+  MoveDirection: {x: 0, y: 0, z: 0}
+  Velocity: {x: 0, y: 0, z: 0}
+  initialRotation: 0
 --- !u!114 &11454900
 MonoBehaviour:
   m_ObjectHideFlags: 1

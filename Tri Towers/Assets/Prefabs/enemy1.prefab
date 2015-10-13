@@ -12,6 +12,8 @@ GameObject:
   - 114: {fileID: 11423340}
   - 114: {fileID: 11421816}
   - 95: {fileID: 9531314}
+  - 114: {fileID: 11437040}
+  - 54: {fileID: 5476466}
   m_Layer: 10
   m_Name: enemy1
   m_TagString: Enemy
@@ -185,6 +187,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130952}
   m_Mesh: {fileID: 4300000, guid: d0ca674497b1b754db6071a90dd98076, type: 3}
+--- !u!54 &5476466
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111428}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &6530438
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -195,8 +212,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: 1.03126943, z: .5}
-  m_Center: {x: 0, y: .0156341549, z: 0}
+  m_Size: {x: .0900000036, y: .5, z: .5}
+  m_Center: {x: -.0399999991, y: .280000001, z: 0}
 --- !u!95 &9531314
 Animator:
   serializedVersion: 3
@@ -242,6 +259,25 @@ MonoBehaviour:
   gib: {fileID: 100000, guid: 770710606b0e99340add11a471d3b42b, type: 2}
   gibOnCollision: 1
   gibOnTrigger: 1
+--- !u!114 &11437040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d45a76ceab47954faabcaec45a05ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints: []
+  Speed: 0
+  curWayPoint: 0
+  doPatrol: 1
+  Target: {x: 0, y: 0, z: 0}
+  MoveDirection: {x: 0, y: 0, z: 0}
+  Velocity: {x: 0, y: 0, z: 0}
+  initialRotation: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
