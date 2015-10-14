@@ -8,7 +8,7 @@ public class PickUps : MonoBehaviour {
 	//drag whatever has the shooting script and the health script into these fields in the inspector
 	//drag the AudioSource of whatever sound you want the pickup to make when picked up
 	public HealthScript h;
-	public Shooting s;
+	public Shoot s;
 	public AudioSource a;
 
 
