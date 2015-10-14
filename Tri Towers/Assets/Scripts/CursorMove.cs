@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CursorMove : MonoBehaviour {
 	public float speed;
-	public bool p1, p2, solo, testing;
+	public bool p1, p2, solo;
 	public GameObject cursor;
 
 	GameData data;
@@ -13,12 +13,8 @@ public class CursorMove : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		data = GameObject.Find ("GameData").GetComponent<GameData> ();
 		playerShoot = GetComponent<Shoot> ();
-		if (!testing) {
-			data = GameObject.Find ("GameData").GetComponent<GameData> ();
-			data.CheckPlayers();
-			solo = data;
-		}
 		numControllers = Input.GetJoystickNames().Length;
 		Debug.Log (numControllers);
 		Cursor.visible = false;
@@ -36,7 +32,7 @@ public class CursorMove : MonoBehaviour {
 				MouseMove ();
 				break;
 			case 1:
-				if (solo) {
+				if (solo || data.alone) {
 					ControllerMove1 ();
 				}
 				else {
