@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\CursorMove.cs" />
      <Compile Include="Assets\Scripts\EnemiesShootAfterDelay.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\GibOnCollide.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\IncomingFire.cs" />
