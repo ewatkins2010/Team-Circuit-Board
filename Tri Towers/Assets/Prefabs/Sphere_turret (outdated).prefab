@@ -499,7 +499,7 @@ GameObject:
   - 114: {fileID: 11446944}
   - 54: {fileID: 5434234}
   m_Layer: 10
-  m_Name: Sphere_turret
+  m_Name: Sphere_turret (outdated)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

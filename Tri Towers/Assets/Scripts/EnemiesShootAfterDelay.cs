@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CubeShootAfterDelay : MonoBehaviour {
+public class EnemiesShootAfterDelay : MonoBehaviour {
 	
 	public float delay = 1.0f;
 	public GameObject e_Bullet;
@@ -9,18 +9,18 @@ public class CubeShootAfterDelay : MonoBehaviour {
 	
 	private GameObject player;
 	
-	private Animator animator;
+	//private Animator animator;
 	
 	void Start () 
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
-		animator = GetComponentInChildren<Animator>();
+		//animator = GetComponentInChildren<Animator>();
 		Invoke ("Shoot", delay);
 	}
 	
 	void LateUpdate()
 	{
-		animator.SetBool ("Shoot", false);
+		//animator.SetBool ("Shoot", false);
 	}
 	
 	void Shoot () 
@@ -29,7 +29,7 @@ public class CubeShootAfterDelay : MonoBehaviour {
 		Instantiate(e_Bullet, transform.position,Quaternion.LookRotation(Camera.main.transform.position - shootPoint.position));
 		
 		//Play animation
-		animator.SetBool ("Shoot", true);
+		//animator.SetBool ("Shoot", true);
 		
 		Invoke ("Shoot", delay);
 	}
