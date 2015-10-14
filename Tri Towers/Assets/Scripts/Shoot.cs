@@ -14,7 +14,7 @@ public class Shoot : MonoBehaviour {
 	//ammo will eventually increase when you shoot an ammo pickup. 
 	public int ammo, gunType;
 	public Text ammoDisplay;
-	Image reticle;
+	public Image reticle;
 	
 	//drag in all of the reticles into this array. they should be set as cursors and not textures or sprites
 	//hotspot is the center of the reticle
@@ -26,7 +26,6 @@ public class Shoot : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		reticle = GetComponent<Image> ();
 		canFire = true;
 	}
 	
@@ -65,14 +64,20 @@ public class Shoot : MonoBehaviour {
 		}
 	}
 
+	public void Reset(){
+		ammo = 0;
+		gunType = 0;
+	}
+
 	IEnumerator fire(float rate, Rigidbody b, float boost){
 		//getting mouse position with raycasting
-		Ray ray = Camera.main.ScreenPointToRay(transform.position);
+		Ray ray = Camera.main.ScreenPointToRay(reticle.transform.position);
 		Quaternion rotation = Quaternion.LookRotation(ray.direction);
 		
 		//Instantiating the bullet and giving it force to move
 		Rigidbody instance = Instantiate(b,Camera.main.transform.position,rotation) as Rigidbody;
 		instance.AddForce(ray.direction*force*boost, forceMode);
+		instance.transform.SetParent (transform);
 		
 		//telling the gun not to fire after initial shot
 		canFire = false;

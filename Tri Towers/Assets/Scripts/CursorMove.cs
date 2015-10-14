@@ -4,13 +4,16 @@ using System.Collections;
 public class CursorMove : MonoBehaviour {
 	public float speed;
 	public bool p1, p2, solo;
+	public GameObject cursor;
 
+	GameData data;
 	Shoot playerShoot;
 	Vector3 movement = Vector3.zero;
 	int numControllers;
 
 	// Use this for initialization
 	void Start () {
+		data = GameObject.Find ("GameData").GetComponent<GameData> ();
 		playerShoot = GetComponent<Shoot> ();
 		numControllers = Input.GetJoystickNames().Length;
 		Debug.Log (numControllers);
@@ -29,7 +32,7 @@ public class CursorMove : MonoBehaviour {
 				MouseMove ();
 				break;
 			case 1:
-				if (solo) {
+				if (solo || data.alone) {
 					ControllerMove1 ();
 				}
 				else {
@@ -55,23 +58,16 @@ public class CursorMove : MonoBehaviour {
 		}
 	}
 
-	/*void Shoot(){
-		Ray ray = Camera.main.ScreenPointToRay (transform.position);
-		Quaternion rotation = Quaternion.LookRotation(ray.direction);
-		GameObject instance = Instantiate (bullet,Camera.main.transform.position, rotation) as GameObject;
-		instance.GetComponent<Rigidbody> ().AddForce (ray.direction * 50f, force);
-	}*/
-
 	void ControllerMove1(){
 		movement.x = Input.GetAxis ("Horizontalp1") * speed * Time.deltaTime;
 		movement.y = Input.GetAxis ("Verticalp1") * speed * Time.deltaTime;
 
-		transform.position += movement;
+		cursor.transform.position += movement;
 		
-		Vector3 temp = GetComponent<RectTransform>().position;
+		Vector3 temp = cursor.transform.position;
 		temp.x = Mathf.Clamp (temp.x, 0, Screen.width);
 		temp.y = Mathf.Clamp (temp.y, 0, Screen.height);
-		GetComponent<RectTransform>().position = temp;
+		cursor.transform.position = temp;
 
 		playerShoot.CheckGun ("Firep1");
 	}
@@ -80,9 +76,9 @@ public class CursorMove : MonoBehaviour {
 		movement.x = Input.GetAxis ("Horizontalp2") * speed * Time.deltaTime;
 		movement.y = Input.GetAxis ("Verticalp2") * speed * Time.deltaTime;
 
-		transform.position += movement;
+		cursor.transform.position += movement;
 		
-		Vector3 temp = transform.position;
+		Vector3 temp = cursor.transform.position;
 		temp.x = Mathf.Clamp (temp.x, 0, Screen.width);
 		temp.y = Mathf.Clamp (temp.y, 0, Screen.height);
 		transform.position = temp;
@@ -91,7 +87,7 @@ public class CursorMove : MonoBehaviour {
 	}
 	
 	void MouseMove() {
-		transform.position = Input.mousePosition;
+		cursor.transform.position = Input.mousePosition;
 		playerShoot.CheckGun ("Firep1M");
 	}
 }
