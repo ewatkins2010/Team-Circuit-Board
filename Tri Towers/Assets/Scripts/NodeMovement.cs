@@ -4,7 +4,6 @@ using System.Collections;
 public class NodeMovement : MonoBehaviour {
 
 	public Node currentNode; //This is the current node that the player is located at.
-	public Node altNode;
 	public float movementSpeed = 20.0f; //The speed the player moves between nodes.
 	public float rotationSpeed = 90.0f; //The speed the player rotates to follow the node path.
 	public Transform head;
@@ -12,18 +11,27 @@ public class NodeMovement : MonoBehaviour {
 	public void MoveToNextNode()
 	{
 		currentNode = currentNode.nextNode;
-		StartCoroutine (RotateToGoal(true));
+		if (currentNode == null)
+			Debug.Log ("No Node!!");
+		else
+			StartCoroutine (RotateToGoal(true));
 	}
 
-	/*public void MoveToAltNode()
+	public void MoveToAltNode()
 	{
-		currentNode = Node.alterNode;
-		StartCoroutine (RotateToGoal(true));
-	}*/
+		currentNode = currentNode.alterNode;
+		if (currentNode == null) {
+			Debug.Log ("No Node!!");
+		}
+		else
+			StartCoroutine (RotateToGoal(true));
+	}
 
 	//Rotate the camera towards the next node.
 	IEnumerator RotateToGoal(bool initialRotation)
 	{
+		//Debug.Log ("Rotation tried to happen");
+
 		Quaternion goalRotation;
 		if(initialRotation)
 		{
@@ -38,13 +46,13 @@ public class NodeMovement : MonoBehaviour {
 		{
 			transform.rotation = Quaternion.RotateTowards (transform.rotation, goalRotation, rotationSpeed * Time.deltaTime);
 
-			if(currentNode.resetCamera)
+			/*if(currentNode.resetCamera)
 			{
 				head.rotation = Quaternion.RotateTowards (head.rotation, Quaternion.identity, rotationSpeed * Time.deltaTime);
-			}
+			}*/
 			if (transform.rotation != goalRotation)
 			{
-				if(currentNode.resetCamera == false || head.rotation != Quaternion.identity)
+				if(/*currentNode.resetCamera == false || */head.rotation != Quaternion.identity)
 					{
 						yield return null;
 					}
