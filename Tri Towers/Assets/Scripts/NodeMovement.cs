@@ -4,6 +4,7 @@ using System.Collections;
 public class NodeMovement : MonoBehaviour {
 
 	public Node currentNode; //This is the current node that the player is located at.
+	public Node altNode;
 	public float movementSpeed = 20.0f; //The speed the player moves between nodes.
 	public float rotationSpeed = 90.0f; //The speed the player rotates to follow the node path.
 	public Transform head;
@@ -13,6 +14,12 @@ public class NodeMovement : MonoBehaviour {
 		currentNode = currentNode.nextNode;
 		StartCoroutine (RotateToGoal(true));
 	}
+
+	/*public void MoveToAltNode()
+	{
+		currentNode = Node.alterNode;
+		StartCoroutine (RotateToGoal(true));
+	}*/
 
 	//Rotate the camera towards the next node.
 	IEnumerator RotateToGoal(bool initialRotation)
