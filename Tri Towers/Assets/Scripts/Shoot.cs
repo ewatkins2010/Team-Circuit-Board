@@ -75,7 +75,7 @@ public class Shoot : MonoBehaviour {
 		Quaternion rotation = Quaternion.LookRotation(ray.direction);
 		
 		//Instantiating the bullet and giving it force to move
-		Rigidbody instance = Instantiate(b,Camera.main.transform.position,rotation) as Rigidbody;
+		Rigidbody instance = Instantiate(b,Camera.main.transform.position,rotation*b.transform.rotation) as Rigidbody;
 		instance.AddForce(ray.direction*force*boost, forceMode);
 		instance.transform.SetParent (transform);
 		

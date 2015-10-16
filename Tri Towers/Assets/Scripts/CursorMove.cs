@@ -84,7 +84,7 @@ public class CursorMove : MonoBehaviour {
 		Vector3 temp = cursor.transform.position;
 		temp.x = Mathf.Clamp (temp.x, 0, Screen.width);
 		temp.y = Mathf.Clamp (temp.y, 0, Screen.height);
-		transform.position = temp;
+		cursor.transform.position = temp;
 
 		playerShoot.CheckGun ("Firep2");
 	}

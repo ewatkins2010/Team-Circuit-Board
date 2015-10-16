@@ -7,6 +7,8 @@
 [Ll]ibrary/
 sysinfo.txt
 *.stackdump
+*.sln
+*.csproj
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
