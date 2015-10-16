@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Pause : MonoBehaviour {
 	public GameObject pause;
-	public int currLevel;
+	//public int currLevel;
 	bool isPaused;
 	// Use this for initialization
 	void Start () {
@@ -12,7 +12,7 @@ public class Pause : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.P))
+		if (Input.GetButtonDown ("Pause") || Input.GetKeyDown (KeyCode.P))
 			CheckIfPaused ();
 	}
 
@@ -32,7 +32,7 @@ public class Pause : MonoBehaviour {
 	public void Restart(){
 		isPaused = false;
 		Time.timeScale = 1;
-		Application.LoadLevel (currLevel);
+		Application.LoadLevel (Application.loadedLevel);
 	}
 
 	public void QuitGame(){

@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour {
 	public EventSystem selection;
 	// Use this for initialization
 	void Start () {
+		selection = GameObject.Find("EventSystem").GetComponent<EventSystem>();
 		for (int i = 0; i < screens.Count; i++) {
 			if (screens[i].gameObject.name != "Main")
 				screens[i].SetActive (false);
@@ -35,6 +36,7 @@ public class Menu : MonoBehaviour {
 			else
 				screens[i].SetActive (true);
 		}
+		selection.SetSelectedGameObject (GameObject.FindGameObjectWithTag("Button"));
 	}
 
 }
