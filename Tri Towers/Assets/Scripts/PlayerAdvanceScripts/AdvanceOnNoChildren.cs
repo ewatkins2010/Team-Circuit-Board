@@ -7,27 +7,16 @@ public class AdvanceOnNoChildren : MonoBehaviour
 	
 	void Update ()
 	{
-	//After the player has destroyed all the targets present, this sets the target node to move to.
-		if (GameObject.FindGameObjectWithTag ("Left").transform.childCount <= 0) {
-			if (playerNodeMovement == null) {
+		if (transform.childCount <= 0) 
+		{
+			if (playerNodeMovement == null) 
 				playerNodeMovement = GameObject.FindGameObjectWithTag ("Player").GetComponent<NodeMovement> ();
-			}
-			
-			playerNodeMovement.MoveToAltNode ();
-			
-			Destroy (gameObject);
-		} 
-		else {
-			//Debug.Log ("Advance Happened");
-			if (transform.childCount <= 0) {
-				if (playerNodeMovement == null) {
-					playerNodeMovement = GameObject.FindGameObjectWithTag ("Player").GetComponent<NodeMovement> ();
-				}
-
+			if (gameObject.tag == "Left")
+				playerNodeMovement.MoveToAltNode ();
+			else
 				playerNodeMovement.MoveToNextNode ();
 
-				Destroy (gameObject);
-			}
+			Destroy (gameObject);
 		}
 	}
 }
