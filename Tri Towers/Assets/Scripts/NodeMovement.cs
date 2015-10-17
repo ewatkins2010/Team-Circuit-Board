@@ -46,13 +46,13 @@ public class NodeMovement : MonoBehaviour {
 		{
 			transform.rotation = Quaternion.RotateTowards (transform.rotation, goalRotation, rotationSpeed * Time.deltaTime);
 
-			/*if(currentNode.resetCamera)
+			if(currentNode.resetCamera)
 			{
 				head.rotation = Quaternion.RotateTowards (head.rotation, Quaternion.identity, rotationSpeed * Time.deltaTime);
-			}*/
+			}
 			if (transform.rotation != goalRotation)
 			{
-				if(/*currentNode.resetCamera == false || */head.rotation != Quaternion.identity)
+				if(currentNode.resetCamera == false || head.rotation != Quaternion.identity)
 					{
 						yield return null;
 					}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class LookAtTarget : MonoBehaviour {
 
 	public float rotationSpeed = 90;
 
