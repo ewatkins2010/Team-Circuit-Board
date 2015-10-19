@@ -22,7 +22,9 @@ public class HealthScript : MonoBehaviour {
 		//keeping the health between 0 and 100
 		if (health > 100)
 			health = 100;
-		if (health < 0)
+		if (health < 0) {
 			health = 0;
+			Camera.main.GetComponent<Pause>().Restart ();
+		}
 	}
 }

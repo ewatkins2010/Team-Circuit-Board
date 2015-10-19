@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemNumber: 1
-  a: {fileID: 0}
+  a: {fileID: 8289132, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -148,6 +148,10 @@ Prefab:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: a
+      value: 
+      objectReference: {fileID: 8289132, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100494}

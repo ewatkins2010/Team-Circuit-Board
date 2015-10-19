@@ -15,7 +15,7 @@ public class GameData : MonoBehaviour {
 	}
 
 	void OnLevelWasLoaded(int level){
-		if (level == 1)
+		if (level == 2)
 			CheckPlayers ();
 	}
 

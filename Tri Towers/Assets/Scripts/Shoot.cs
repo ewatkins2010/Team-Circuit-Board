@@ -15,6 +15,7 @@ public class Shoot : MonoBehaviour {
 	public int ammo, gunType;
 	public Text ammoDisplay;
 	public Image reticle;
+	public AudioSource a;
 	
 	//drag in all of the reticles into this array. they should be set as cursors and not textures or sprites
 	//hotspot is the center of the reticle
@@ -26,6 +27,7 @@ public class Shoot : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
+		a = GameObject.Find ("Player Fire").GetComponent<AudioSource> ();
 		canFire = true;
 	}
 	
@@ -76,6 +78,7 @@ public class Shoot : MonoBehaviour {
 		
 		//Instantiating the bullet and giving it force to move
 		Rigidbody instance = Instantiate(b,Camera.main.transform.position,rotation*b.transform.rotation) as Rigidbody;
+		a.Play ();
 		instance.AddForce(ray.direction*force*boost, forceMode);
 		instance.transform.SetParent (transform);
 		

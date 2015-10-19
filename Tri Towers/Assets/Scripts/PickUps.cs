@@ -11,6 +11,7 @@ public class PickUps : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		a = GameObject.Find ("Pickup Weapon Sound").GetComponent<AudioSource> ();
 		Destroy (gameObject, 4f);
 	}
 	

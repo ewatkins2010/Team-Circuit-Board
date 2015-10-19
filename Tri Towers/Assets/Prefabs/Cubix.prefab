@@ -933,6 +933,7 @@ MonoBehaviour:
   e_Bullet: {fileID: 185258, guid: cbf97cdfa66f3b34dbf4d7263d4e4186, type: 2}
   shootPoint: {fileID: 423988}
   canShoot: 0
+  a: {fileID: 8269796, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
 --- !u!114 &11443726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -976,6 +977,7 @@ MonoBehaviour:
   - {fileID: 190786, guid: 6b15c2389d1e7344093cdaaf37597358, type: 2}
   - {fileID: 142810, guid: dde052dc032d1db4b953c2053c4305f3, type: 2}
   itemSpawn: {fileID: 480916}
+  a: {fileID: 8216944, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
 --- !u!137 &13737816
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1094,6 +1096,10 @@ Prefab:
       propertyPath: doPatrol
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: a
+      value: 
+      objectReference: {fileID: 8216944, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182270}

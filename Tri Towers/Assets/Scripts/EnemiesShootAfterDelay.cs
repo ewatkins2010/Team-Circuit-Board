@@ -7,6 +7,7 @@ public class EnemiesShootAfterDelay : MonoBehaviour {
 	public GameObject e_Bullet;
 	public Transform shootPoint;
 	public bool canShoot;
+	public AudioSource a;
 	
 	private GameObject p1;
 	private Animator animator;
@@ -14,6 +15,7 @@ public class EnemiesShootAfterDelay : MonoBehaviour {
 	
 	void Start () 
 	{
+		a = GameObject.Find ("Enemy Fire").GetComponent<AudioSource> ();
 		box1 = GameObject.FindGameObjectWithTag ("P1");
 		box2 = GameObject.FindGameObjectWithTag ("P2");
 		cam = GameObject.Find ("Main Camera");
@@ -46,6 +48,7 @@ public class EnemiesShootAfterDelay : MonoBehaviour {
 			instance = Instantiate (e_Bullet, transform.position, Quaternion.LookRotation (target.position - shootPoint.position)) as GameObject;
 			instance.transform.SetParent (transform.root);
 			//Play animation
+			a.Play ();
 			animator.SetTrigger ("Fire");
 			Invoke ("Shoot", delay);
 		}

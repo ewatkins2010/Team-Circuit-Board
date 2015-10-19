@@ -490,13 +490,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 5444620, guid: 2acf328695cf23e40a266364050a5010, type: 2}
-  bigBullet: {fileID: 5465994, guid: 37879084a30557148912cba733090607, type: 2}
+  bigBullet: {fileID: 5476128, guid: 8cbfb5945cfdca542b058b60548c5289, type: 2}
   force: 50
   forceMode: 2
   ammo: 0
   gunType: 0
   ammoDisplay: {fileID: 11431470}
   reticle: {fileID: 11423514}
+  a: {fileID: 8286806, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
   sprites:
   - {fileID: 21300000, guid: 0414d5492e87acf4384281dc7bcf3149, type: 3}
   - {fileID: 21300000, guid: ed2ce0c3a46b2814e835c36200f9c302, type: 3}
@@ -578,13 +579,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 5471022, guid: 420265fa57cf10f438c0ecfc8177b928, type: 2}
-  bigBullet: {fileID: 5465994, guid: 37879084a30557148912cba733090607, type: 2}
+  bigBullet: {fileID: 5470618, guid: eb0c568518c8dba46860e5d70a604882, type: 2}
   force: 50
   forceMode: 2
   ammo: 0
   gunType: 0
   ammoDisplay: {fileID: 11481312}
   reticle: {fileID: 11422608}
+  a: {fileID: 8286806, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
   sprites:
   - {fileID: 21300000, guid: fca5b6188b10eaf4fbae82b2c043c3bf, type: 3}
   - {fileID: 21300000, guid: b85303f0f624aa541a94a0884d87241e, type: 3}
@@ -1078,6 +1080,14 @@ Prefab:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 5471022, guid: 420265fa57cf10f438c0ecfc8177b928, type: 2}
+    - target: {fileID: 0}
+      propertyPath: a
+      value: 
+      objectReference: {fileID: 8286806, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
+    - target: {fileID: 0}
+      propertyPath: bigBullet
+      value: 
+      objectReference: {fileID: 5470618, guid: eb0c568518c8dba46860e5d70a604882, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193514}

@@ -15,6 +15,9 @@ public class Cutscenes : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetButtonDown ("Submit"))
+			Application.LoadLevel (Application.loadedLevel + 1);
 		if (!scene.isPlaying)
 			Application.LoadLevel (Application.loadedLevel + 1);
 	}

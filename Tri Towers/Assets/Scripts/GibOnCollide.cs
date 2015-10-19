@@ -9,11 +9,13 @@ public class GibOnCollide : MonoBehaviour
 	public bool gibOnTrigger = true;
 	public GameObject[] pickUps;
 	public Transform itemSpawn;
+	public AudioSource a;
 	Animator anim;
 	bool isAlive;
 
 	// Use this for initialization
 	void Start () {
+		a = GameObject.Find ("Explosion").GetComponent<AudioSource> ();
 		anim = GetComponent<Animator> ();
 		isAlive = true;
 	}
@@ -47,6 +49,7 @@ public class GibOnCollide : MonoBehaviour
 		GetComponentInChildren<EnemiesShootAfterDelay> ().canShoot = false;
 		anim.SetTrigger ("Death");
 		yield return new WaitForSeconds (delay);
+		a.Play ();
 		Instantiate (gib, transform.position, Quaternion.identity);
 		int random = Random.Range(1,10);
 		Debug.Log (random);
