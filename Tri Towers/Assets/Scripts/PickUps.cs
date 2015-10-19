@@ -11,7 +11,7 @@ public class PickUps : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		Destroy (gameObject, 4f);
 	}
 	
 	// Update is called once per frame
@@ -40,10 +40,11 @@ public class PickUps : MonoBehaviour {
 			default:
 				break;
 			}
+
+			//play the sound for the pickup right before it is destroyed
+			if (a!=null)
+				a.Play ();
+			Destroy (gameObject);
 		}
-		//play the sound for the pickup right before it is destroyed
-		if (a!=null)
-			a.Play ();
-		Destroy (gameObject);
 	}
 }

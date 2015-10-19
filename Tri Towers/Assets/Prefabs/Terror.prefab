@@ -43,9 +43,9 @@ GameObject:
   - 114: {fileID: 11464374}
   - 54: {fileID: 5448766}
   - 65: {fileID: 6579032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Terror
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,6 +227,21 @@ GameObject:
   - 4: {fileID: 489938}
   m_Layer: 0
   m_Name: transform1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &164384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 406656}
+  m_Layer: 10
+  m_Name: ItemSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,6 +453,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 486142}
   m_RootOrder: 0
+--- !u!4 &406656
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.00449999981, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 429670}
+  m_RootOrder: 6
 --- !u!4 &407468
 Transform:
   m_ObjectHideFlags: 1
@@ -504,6 +531,7 @@ Transform:
   - {fileID: 479416}
   - {fileID: 449928}
   - {fileID: 425336}
+  - {fileID: 406656}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &441474
@@ -794,6 +822,7 @@ MonoBehaviour:
   delay: 1
   e_Bullet: {fileID: 166250, guid: e160a5a997506ed4d8dd4118bb58d02d, type: 2}
   shootPoint: {fileID: 425336}
+  canShoot: 0
 --- !u!114 &11464374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -815,6 +844,7 @@ MonoBehaviour:
   MoveDirection: {x: 0, y: 0, z: 0}
   Velocity: {x: 0, y: 0, z: 0}
   initialRotation: 0
+  anim: {fileID: 0}
 --- !u!114 &11494782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -826,9 +856,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6eba3be2912be4b9c616809ea56f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gib: {fileID: 100000, guid: 770710606b0e99340add11a471d3b42b, type: 2}
+  gib: {fileID: 160120, guid: 2f2d4cabc01ea0e429ac1e40c5ed3ad2, type: 2}
+  delay: 0
   gibOnCollision: 1
   gibOnTrigger: 1
+  pickUps:
+  - {fileID: 100494, guid: 8cba70b2d1734a94a9f28a76584ae0c8, type: 2}
+  - {fileID: 190786, guid: 6b15c2389d1e7344093cdaaf37597358, type: 2}
+  - {fileID: 142810, guid: dde052dc032d1db4b953c2053c4305f3, type: 2}
+  itemSpawn: {fileID: 406656}
 --- !u!137 &13765758
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1963,7 +1999,39 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: pickUps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: gib
+      value: 
+      objectReference: {fileID: 160120, guid: 2f2d4cabc01ea0e429ac1e40c5ed3ad2, type: 2}
+    - target: {fileID: 0}
+      propertyPath: pickUps.Array.data[0]
+      value: 
+      objectReference: {fileID: 100494, guid: 8cba70b2d1734a94a9f28a76584ae0c8, type: 2}
+    - target: {fileID: 0}
+      propertyPath: pickUps.Array.data[1]
+      value: 
+      objectReference: {fileID: 190786, guid: 6b15c2389d1e7344093cdaaf37597358, type: 2}
+    - target: {fileID: 0}
+      propertyPath: pickUps.Array.data[2]
+      value: 
+      objectReference: {fileID: 142810, guid: dde052dc032d1db4b953c2053c4305f3, type: 2}
+    - target: {fileID: 0}
+      propertyPath: delay
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112506}

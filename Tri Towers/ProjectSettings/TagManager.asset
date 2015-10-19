@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Left
   - Right
+  - P1
+  - P2
   layers:
   - Default
   - TransparentFX
@@ -24,7 +26,7 @@ TagManager:
   - Enemies
   - Enemy Bullets
   - Cursor
-  - 
+  - Pickups
   - 
   - 
   - 

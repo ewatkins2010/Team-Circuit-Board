@@ -5,10 +5,13 @@ public class IncomingFire : MonoBehaviour
 {
 	public float speed = 1.0f;
 	public bool gibOnCollision = true;
+	public GameObject p1, p2;
 
 	// Use this for initialization
 	void Start () {
 		Destroy (gameObject, 3f);
+		p1 = GameObject.Find ("P1");
+		p2 = GameObject.Find ("P2");
 	}
 	
 	// Update is called once per frame
@@ -20,14 +23,13 @@ public class IncomingFire : MonoBehaviour
 
 	void OnCollisionEnter(Collision col)
 	{
-		/*if(gibOnCollision)
-		{
-			Destroy(gameObject);
-		}*/
 		Debug.Log ("hit something");
 		Debug.Log (col.gameObject.name);
-		if (col.gameObject.tag == "Player") {
-			col.gameObject.GetComponentInChildren<HealthScript>().health-=10f;
+		if (col.gameObject.tag == "P1" || col.gameObject.tag == "Player") {
+			p1.GetComponentInChildren<HealthScript>().health-=10f;
+		}
+		if (col.gameObject.tag == "P2") {
+			p2.GetComponentInChildren<HealthScript>().health-=10f;
 		}
 		Destroy (gameObject);
 	}
