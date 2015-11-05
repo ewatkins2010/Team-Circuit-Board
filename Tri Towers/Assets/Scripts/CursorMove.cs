@@ -73,6 +73,8 @@ public class CursorMove : MonoBehaviour {
 		cursor.transform.position = temp;
 
 		playerShoot.CheckGun ("Firep1");
+		playerShoot.Reload ("Reloadp1");
+		playerShoot.Shield ("Shieldp1");
 	}
 
 	void ControllerMove2(){
@@ -87,10 +89,14 @@ public class CursorMove : MonoBehaviour {
 		cursor.transform.position = temp;
 
 		playerShoot.CheckGun ("Firep2");
+		playerShoot.Reload ("Reloadp2");
+		playerShoot.Shield ("Shieldp2");
 	}
 	
 	void MouseMove() {
 		cursor.transform.position = Input.mousePosition;
 		playerShoot.CheckGun ("Firep1M");
+		playerShoot.Reload ("ReloadM");
+		playerShoot.Shield ("ShieldM");
 	}
 }

@@ -32,11 +32,13 @@ public class PickUps : MonoBehaviour {
 			case 2:
 				col.gameObject.GetComponentInParent<Shoot>().ammo = 50;
 				col.gameObject.GetComponentInParent<Shoot>().gunType = 1;
+				col.gameObject.GetComponentInParent<Shoot>().ammoScale = 50;
 				break;
 			//this is the shot gun. around 5 bullets is pretty standard I think
 			case 3:
 				col.gameObject.GetComponentInParent<Shoot>().ammo = 5;
 				col.gameObject.GetComponentInParent<Shoot>().gunType = 2;
+				col.gameObject.GetComponentInParent<Shoot>().ammoScale = 5;
 				break;
 			default:
 				break;

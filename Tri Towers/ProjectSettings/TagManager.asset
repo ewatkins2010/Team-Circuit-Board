@@ -12,6 +12,8 @@ TagManager:
   - Right
   - P1
   - P2
+  - BarrierP1
+  - BarrierP2
   layers:
   - Default
   - TransparentFX
