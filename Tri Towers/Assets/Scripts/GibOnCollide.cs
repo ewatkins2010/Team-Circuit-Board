@@ -50,7 +50,7 @@ public class GibOnCollide : MonoBehaviour
 		anim.SetTrigger ("Death");
 		yield return new WaitForSeconds (delay);
 		a.Play ();
-		Instantiate (gib, transform.position, Quaternion.identity);
+		Instantiate (gib, transform.position, gib.transform.rotation);
 		int random = Random.Range(1,10);
 		Debug.Log (random);
 		if (random >= 1 && random <= 3) {

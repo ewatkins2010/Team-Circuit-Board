@@ -133,6 +133,48 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: .00100000005
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1130999970
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 70.567276
+      objectReference: {fileID: 0}
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 63.501667
+      objectReference: {fileID: 0}
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -.707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 461850, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1445106543
 GameObject:
   m_ObjectHideFlags: 0

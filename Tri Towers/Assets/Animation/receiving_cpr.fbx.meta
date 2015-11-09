@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 74fa88713b0004c9f8d8937d746dac92
+timeCreated: 1447058057
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: HEAD
+    100002: joint21
+    100004: joint22
+    100006: joint23
+    100008: joint25
+    100010: joint26
+    100012: joint27
+    100014: joint28
+    100016: joint29
+    100018: joint3
+    100020: joint30
+    100022: joint31
+    100024: joint32
+    100026: joint33
+    100028: joint34
+    100030: joint35
+    100032: joint36
+    100034: joint37
+    100036: joint4
+    100038: joint5
+    100040: joint6
+    100042: joint7
+    100044: joint8
+    100046: joint9
+    100048: LT_Leg
+    100050: //RootNode
+    100052: RT_Leg
+    100054: UP_Body
+    400000: HEAD
+    400002: joint21
+    400004: joint22
+    400006: joint23
+    400008: joint25
+    400010: joint26
+    400012: joint27
+    400014: joint28
+    400016: joint29
+    400018: joint3
+    400020: joint30
+    400022: joint31
+    400024: joint32
+    400026: joint33
+    400028: joint34
+    400030: joint35
+    400032: joint36
+    400034: joint37
+    400036: joint4
+    400038: joint5
+    400040: joint6
+    400042: joint7
+    400044: joint8
+    400046: joint9
+    400048: LT_Leg
+    400050: //RootNode
+    400052: RT_Leg
+    400054: UP_Body
+    7400000: mixamo.com
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 259
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint30
+        weight: 1
+      - path: joint30/LT_Leg
+        weight: 1
+      - path: joint30/LT_Leg/joint21
+        weight: 1
+      - path: joint30/LT_Leg/joint21/joint22
+        weight: 1
+      - path: joint30/LT_Leg/joint21/joint22/joint23
+        weight: 1
+      - path: joint30/RT_Leg
+        weight: 1
+      - path: joint30/RT_Leg/joint25
+        weight: 1
+      - path: joint30/RT_Leg/joint25/joint26
+        weight: 1
+      - path: joint30/RT_Leg/joint25/joint26/joint29
+        weight: 1
+      - path: joint30/UP_Body
+        weight: 1
+      - path: joint30/UP_Body/HEAD
+        weight: 1
+      - path: joint30/UP_Body/HEAD/joint27
+        weight: 1
+      - path: joint30/UP_Body/HEAD/joint27/joint28
+        weight: 1
+      - path: joint30/UP_Body/joint3
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint8
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint8/joint9
+        weight: 1
+      - path: joint30/UP_Body/joint31
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint34/joint35
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint36
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint36/joint37
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
