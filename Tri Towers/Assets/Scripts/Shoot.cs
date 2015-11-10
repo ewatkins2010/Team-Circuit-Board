@@ -4,9 +4,8 @@ using UnityEngine.UI;
 
 public class Shoot : MonoBehaviour {
 	//drag in the bullet and BigBullet prefabs into these slots
-	public Rigidbody bullet;
-	public Rigidbody bigBullet;
-	
+	public Rigidbody[] bullets;
+
 	//defalut force of the gun
 	public float force = 10.0f;
 	public ForceMode forceMode;
@@ -100,19 +99,19 @@ public class Shoot : MonoBehaviour {
 			case 0:
 				reticle.sprite = sprites[0];
 				if (Input.GetButtonDown (button))
-					StartCoroutine (fire (.3f, bullet, 1f));
+					StartCoroutine (fire (.3f, bullets[0], 1f));
 				break;
 				//this is the rifle, it has a faster rate of fire
 			case 1:
 				reticle.sprite = sprites[1];
 				if (Input.GetButton (button))
-					StartCoroutine (fire (.1f, bullet, 1f));
+					StartCoroutine (fire (.1f, bullets[1], 1f));
 				break;
 				//this is the shot gun. it uses the BigBullet and has a slower rate of fire
 			case 2:
 				reticle.sprite = sprites[2];
 				if (Input.GetButtonDown (button))
-					StartCoroutine (fire (1f, bigBullet, 1.3f));
+					StartCoroutine (fire (1f, bullets[2], 1.3f));
 				break;
 			default:
 				break;
