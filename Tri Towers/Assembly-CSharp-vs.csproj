@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Animation\Message.cs" />
      <Compile Include="Assets\Scripts\Banner.cs" />
      <Compile Include="Assets\Scripts\Branch.cs" />
      <Compile Include="Assets\Scripts\CursorMove.cs" />
@@ -70,6 +69,7 @@
      <Compile Include="Assets\Scripts\PlayerAdvanceScripts\AdvanceAfterDelay.cs" />
      <Compile Include="Assets\Scripts\PlayerAdvanceScripts\AdvanceOnNoChildren.cs" />
      <Compile Include="Assets\Scripts\Projectiles.cs" />
+     <Compile Include="Assets\Scripts\ScoreBoard.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\ShootAfterDelay.cs" />
      <Compile Include="Assets\Scripts\ShootAtClickPosition.cs" />
