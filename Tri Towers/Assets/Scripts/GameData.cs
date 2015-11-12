@@ -4,6 +4,8 @@ using System.Collections;
 public class GameData : MonoBehaviour {
 	public bool alone;
 	public GameObject player2;
+
+	public int score1, score2;
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (gameObject);

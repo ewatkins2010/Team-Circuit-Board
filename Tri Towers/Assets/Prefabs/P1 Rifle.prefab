@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 471084}
   - 33: {fileID: 3375172}
   - 23: {fileID: 2373288}
-  - 64: {fileID: 6448242}
+  - 65: {fileID: 6599460}
   - 54: {fileID: 5406884}
   - 114: {fileID: 11478936}
   m_Layer: 9
@@ -78,8 +78,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6448242
-MeshCollider:
+--- !u!65 &6599460
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -88,8 +88,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 517e00ab50f67de42bd25aa83d2f6097, type: 3}
+  m_Size: {x: .0313416496, y: .0569712147, z: .0335012488}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11478936
 MonoBehaviour:
   m_ObjectHideFlags: 1

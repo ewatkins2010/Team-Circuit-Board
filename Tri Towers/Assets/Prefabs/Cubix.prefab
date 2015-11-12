@@ -899,8 +899,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: -.0299999993, y: .0473649018, z: .00999999978}
-  m_Center: {x: .00499999989, y: .0268528927, z: -1.62920677e-09}
+  m_Size: {x: -.0370409563, y: .0533889979, z: .0270751566}
+  m_Center: {x: .00614705356, y: .0258033816, z: -.000923296146}
 --- !u!95 &9579350
 Animator:
   serializedVersion: 3
@@ -1100,6 +1100,30 @@ Prefab:
       propertyPath: a
       value: 
       objectReference: {fileID: 8216944, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Size.x
+      value: -.0370409563
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.y
+      value: .0533889979
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.z
+      value: .0270751566
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Center.x
+      value: .00614705356
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Center.y
+      value: .0258033816
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Center.z
+      value: -.000923296146
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182270}

@@ -10,11 +10,19 @@ public class ScoreBoard : MonoBehaviour {
 	public int max1, max2;
 
 	public Text p1ScoreText, p2ScoreText;
-	public int p1Score, p2Score;
+
+	int p1Score, p2Score;
+	GameData data;
+
+
 
 	// Use this for initialization
 	void Start () {
 		StartCoroutine ("ActivateScore");
+		if (!testing) {
+			data = GameObject.Find ("GameData").GetComponent<GameData> ();
+
+		}
 	}
 	
 	// Update is called once per frame
