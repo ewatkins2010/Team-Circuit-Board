@@ -5,12 +5,13 @@ public class HealthScript : MonoBehaviour {
 	//making a slider for testing in the inspector
 	[Range(0,100)]
     public float health;
+	public int score;
 
 	public GameObject bar;
     //public static bool isPlayerAlive = true;
 	
 	void Start () {
-
+		score = 0;
 	}
 	
 	

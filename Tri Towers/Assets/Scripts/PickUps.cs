@@ -27,18 +27,21 @@ public class PickUps : MonoBehaviour {
 			//this is the health pickup
 			case 1:
 				col.gameObject.GetComponentInParent<HealthScript>().health += 10;
+				col.gameObject.GetComponentInParent<HealthScript>().score += 50;
 				break;
 			//this is the rifle pickup. giving the player 50 shots for now but we can always change later
 			case 2:
 				col.gameObject.GetComponentInParent<Shoot>().ammo = 50;
 				col.gameObject.GetComponentInParent<Shoot>().gunType = 1;
 				col.gameObject.GetComponentInParent<Shoot>().ammoScale = 50;
+				col.gameObject.GetComponentInParent<HealthScript>().score += 75;
 				break;
 			//this is the shot gun. around 5 bullets is pretty standard I think
 			case 3:
 				col.gameObject.GetComponentInParent<Shoot>().ammo = 5;
 				col.gameObject.GetComponentInParent<Shoot>().gunType = 2;
 				col.gameObject.GetComponentInParent<Shoot>().ammoScale = 5;
+				col.gameObject.GetComponentInParent<HealthScript>().score += 75;
 				break;
 			default:
 				break;
