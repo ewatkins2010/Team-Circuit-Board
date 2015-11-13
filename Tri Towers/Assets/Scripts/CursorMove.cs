@@ -12,10 +12,12 @@ public class CursorMove : MonoBehaviour {
 	int numControllers;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		if (!testing) {
 			data = GameObject.Find ("GameData").GetComponent<GameData> ();
 			solo = data.alone;
+			if(p1)
+				data.CheckPlayers ();
 		}
 		playerShoot = GetComponent<Shoot> ();
 		numControllers = Input.GetJoystickNames().Length;

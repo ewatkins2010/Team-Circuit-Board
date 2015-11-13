@@ -38,10 +38,12 @@ public class IncomingFire : MonoBehaviour
 		if (col.gameObject.tag == "BarrierP1") {
 			b.Play ();
 			p1.GetComponentInChildren<Shoot>().shieldHit += 1;
+			p1.GetComponent<HealthScript>().score += 100;
 		}
 		if (col.gameObject.tag == "BarrierP2") {
 			b.Play ();
 			p2.GetComponentInChildren<Shoot>().shieldHit += 1;
+			p2.GetComponent<HealthScript>().score += 100;
 		}
 		Destroy (gameObject);
 	}

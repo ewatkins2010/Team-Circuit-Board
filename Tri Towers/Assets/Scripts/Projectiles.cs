@@ -14,6 +14,9 @@ public class Projectiles : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
+		if (col.gameObject.tag == "EnemyBullet") {
+			GetComponentInParent<HealthScript>().score += 50;
+		}
 		Destroy (gameObject);
 	}
 }

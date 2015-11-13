@@ -5,7 +5,7 @@ public class GameData : MonoBehaviour {
 	public bool alone;
 	public GameObject player2;
 
-	public int score1, score2;
+	public int score1, score2, nextLevel;
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (gameObject);
@@ -17,8 +17,6 @@ public class GameData : MonoBehaviour {
 	}
 
 	void OnLevelWasLoaded(int level){
-		if (level == 2)
-			CheckPlayers ();
 	}
 
 	public void IsAlone(bool choice){
