@@ -19,13 +19,14 @@ public class ScoreBoard : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine ("ActivateScore");
+		Cursor.visible = true;
 		if (!testing) {
 			data = GameObject.Find ("GameData").GetComponent<GameData> ();
 			max1 = data.score1;
 			max2 = data.score2;
 			solo = data.alone;
 		}
+		StartCoroutine ("ActivateScore");
 
 		if (solo)
 			p2.SetActive (false);
@@ -41,13 +42,14 @@ public class ScoreBoard : MonoBehaviour {
 		p1Text.SetActive (true);
 		if (!solo)
 			p2Text.SetActive (true);
-		a.Play ();
 		StartCoroutine ("CountUP");
 	}
 
 	IEnumerator CountUP(){
-		p1Score+=3;
-		p2Score+=3;
+		if (!a.isPlaying)
+			a.Play ();
+		p1Score+=15;
+		p2Score+=15;
 		yield return new WaitForSeconds (0f);
 
 		p1Score = Mathf.Clamp (p1Score, 0, max1);

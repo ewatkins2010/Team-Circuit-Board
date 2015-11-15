@@ -25,7 +25,7 @@ public class GibOnCollide : MonoBehaviour
 		if(gibOnTrigger && isAlive)
 		{
 			if (col.gameObject.tag == "PlayerBullet" && tag == "Enemy")
-				col.GetComponentInParent<HealthScript>().score += 300;
+				col.GetComponentInParent<HealthScript>().score += 100;
 			if (tag == "Enemy")
 				StartCoroutine("GibNow");
 			else

@@ -1293,7 +1293,7 @@ MonoBehaviour:
   p1Text: {fileID: 413590203}
   p2Text: {fileID: 55477603}
   button: {fileID: 571468785}
-  testing: 1
+  testing: 0
   solo: 0
   max1: 1500
   max2: 0
@@ -1426,7 +1426,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 571468785}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
 --- !u!4 &1949088055
