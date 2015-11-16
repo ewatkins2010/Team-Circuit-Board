@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class EnemyPatrol : MonoBehaviour {
-
 	public Transform[] Waypoints;
 	public float Speed;
 	public int curWayPoint;

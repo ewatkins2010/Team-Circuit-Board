@@ -41,7 +41,6 @@ public class EnemiesShootAfterDelay : MonoBehaviour {
 				target = box1.transform;
 			else
 				target = box2.transform;
-			Debug.Log (random);
 		}
 		if (canShoot) {
 			GameObject instance;

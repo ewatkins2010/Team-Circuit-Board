@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4ff83ba43a55d1f4c80fc35e3d547542
-timeCreated: 1447217887
+guid: fd06f603361f9374597cb01a25799383
+timeCreated: 1447217890
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -59,7 +59,7 @@ ModelImporter:
     400048: Character1_Spine1
     400050: Character1_Spine2
     400052: //RootNode
-    7400000: mixamo.com
+    7400000: Death
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -82,10 +82,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: Death
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 81
+      lastFrame: 110
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

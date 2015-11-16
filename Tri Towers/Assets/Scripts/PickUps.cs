@@ -12,7 +12,7 @@ public class PickUps : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		a = GameObject.Find ("Pickup Weapon Sound").GetComponent<AudioSource> ();
-		Destroy (gameObject, 4f);
+		Destroy (gameObject, 3f);
 	}
 	
 	// Update is called once per frame
