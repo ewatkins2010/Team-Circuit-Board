@@ -968,7 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6eba3be2912be4b9c616809ea56f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gib: {fileID: 160120, guid: 2f2d4cabc01ea0e429ac1e40c5ed3ad2, type: 2}
+  gib: {fileID: 106864, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
   delay: 1.5
   gibOnCollision: 1
   gibOnTrigger: 1
@@ -1071,7 +1071,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: gib
       value: 
-      objectReference: {fileID: 160120, guid: 2f2d4cabc01ea0e429ac1e40c5ed3ad2, type: 2}
+      objectReference: {fileID: 106864, guid: 46bda1d5bfd2b466eb0b1dfa84e3df3d, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 1
