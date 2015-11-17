@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 644e4d4d4482ac949a7007edc7c60a89
-timeCreated: 1447375772
+guid: ea900613faf90544b980848bab5f8989
+timeCreated: 1447732044
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -32,8 +32,14 @@ ModelImporter:
     100048: LT_Leg
     100050: //RootNode
     100052: polySurface26
-    100054: RT_Leg
-    100056: UP_Body
+    100054: polySurface27
+    100056: pSphere1
+    100058: pSphere2
+    100060: RT_Leg
+    100062: transform1
+    100064: transform2
+    100066: transform3
+    100068: UP_Body
     400000: HEAD
     400002: joint1
     400004: joint10
@@ -61,12 +67,18 @@ ModelImporter:
     400048: LT_Leg
     400050: //RootNode
     400052: polySurface26
-    400054: RT_Leg
-    400056: UP_Body
-    4300000: polySurface26
+    400054: polySurface27
+    400056: pSphere1
+    400058: pSphere2
+    400060: RT_Leg
+    400062: transform1
+    400064: transform2
+    400066: transform3
+    400068: UP_Body
+    4300000: polySurface27
     7400000: Take 001
     9500000: //RootNode
-    13700000: polySurface26
+    13700000: polySurface27
   materials:
     importMaterials: 1
     materialName: 0
