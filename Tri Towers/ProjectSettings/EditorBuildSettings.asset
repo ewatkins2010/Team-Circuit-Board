@@ -7,13 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Final/Menus/MainMenu.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Cutscenes/Cutscene 1.unity
   - enabled: 1
     path: Assets/Scenes/Final/Levels/Level1.unity
   - enabled: 1
     path: Assets/Scenes/Final/Levels/Bridge 1.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Levels/Level2.unity
   - enabled: 1
     path: Assets/Scenes/Final/Menus/ScoreScreen.unity

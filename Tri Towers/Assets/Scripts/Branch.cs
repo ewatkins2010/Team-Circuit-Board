@@ -13,8 +13,9 @@ public class Branch : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(){
+	void OnTriggerEnter(Collider col){
 		OtherRoute.SetActive (false);
+		Destroy (col.gameObject);
 		Destroy (gameObject);
 	}
 }

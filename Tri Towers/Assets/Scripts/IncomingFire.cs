@@ -25,8 +25,6 @@ public class IncomingFire : MonoBehaviour
 
 	void OnCollisionEnter(Collision col)
 	{
-		Debug.Log (col.gameObject.name);
-
 		if (col.gameObject.tag == "P1" || col.gameObject.tag == "Player") {
 			a.Play ();
 			p1.GetComponentInChildren<HealthScript>().health-=10f;

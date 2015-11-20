@@ -91,27 +91,26 @@ public class Shoot : MonoBehaviour {
 	}
 
 	public void CheckGun(string button){
-		//ammoDisplay.text = ammo + "";
 		//if the gun can fire, then shoot
-		if (canFire){
+		if (canFire && !shields[shieldIndex].activeInHierarchy){
 			switch (gunType){
 				//this is the pistol
 			case 0:
 				reticle.sprite = sprites[0];
 				if (Input.GetButtonDown (button))
-					StartCoroutine (fire (.3f, bullets[0], 1f));
+					StartCoroutine (fire (.2f, bullets[0]));
 				break;
 				//this is the rifle, it has a faster rate of fire
 			case 1:
 				reticle.sprite = sprites[1];
 				if (Input.GetButton (button))
-					StartCoroutine (fire (.1f, bullets[1], 1f));
+					StartCoroutine (fire (.1f, bullets[1]));
 				break;
 				//this is the shot gun. it uses the BigBullet and has a slower rate of fire
 			case 2:
 				reticle.sprite = sprites[2];
 				if (Input.GetButtonDown (button))
-					StartCoroutine (fire (1f, bullets[2], 1.3f));
+					StartCoroutine (fire (.5f, bullets[2]));
 				break;
 			default:
 				break;
@@ -124,7 +123,7 @@ public class Shoot : MonoBehaviour {
 		gunType = 0;
 	}
 
-	IEnumerator fire(float rate, Rigidbody b, float boost){
+	IEnumerator fire(float rate, Rigidbody b){
 		//getting mouse position with raycasting
 		Ray ray = Camera.main.ScreenPointToRay(reticle.transform.position);
 		Quaternion rotation = Quaternion.LookRotation(ray.direction);
@@ -133,7 +132,7 @@ public class Shoot : MonoBehaviour {
 		Rigidbody instance = Instantiate(b,Camera.main.transform.position,rotation*b.transform.rotation) as Rigidbody;
 		if (a != null)
 			a.Play ();
-		instance.AddForce(ray.direction*force*boost, forceMode);
+		instance.AddForce(ray.direction*force, forceMode);
 		instance.transform.SetParent (transform);
 		
 		//telling the gun not to fire after initial shot

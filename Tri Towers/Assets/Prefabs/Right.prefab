@@ -11,8 +11,8 @@ GameObject:
   - 33: {fileID: 3303122}
   - 23: {fileID: 2317592}
   - 95: {fileID: 9503060}
-  - 64: {fileID: 6459980}
   - 114: {fileID: 11452140}
+  - 65: {fileID: 6513338}
   m_Layer: 0
   m_Name: Right
   m_TagString: Right
@@ -63,8 +63,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168648}
   m_Mesh: {fileID: 4300000, guid: 3fbf4445ed8f4bf45b5629e71fc1a91b, type: 3}
---- !u!64 &6459980
-MeshCollider:
+--- !u!65 &6513338
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -73,8 +73,8 @@ MeshCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 3fbf4445ed8f4bf45b5629e71fc1a91b, type: 3}
+  m_Size: {x: .0887230039, y: .0609314442, z: .0532842651}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9503060
 Animator:
   serializedVersion: 3

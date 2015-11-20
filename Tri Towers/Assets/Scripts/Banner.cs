@@ -24,6 +24,7 @@ public class Banner : MonoBehaviour {
 				GetComponent<MeshRenderer>().material.mainTexture = colors[0];
 			if (turnGreen)
 				GetComponent<MeshRenderer>().material.mainTexture = colors[1];
+			col.gameObject.GetComponentInParent<HealthScript>().score += 500;
 		}
 	}
 }

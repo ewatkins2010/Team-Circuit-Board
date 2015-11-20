@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CursorMove : MonoBehaviour {
 	public float speed;
-	public bool p1, p2, solo, testing;
+	public bool p1, p2, solo, testing, lightGun;
 	public GameObject cursor;
 
 	GameData data;
@@ -37,7 +37,7 @@ public class CursorMove : MonoBehaviour {
 				MouseMove ();
 				break;
 			case 1:
-				if (solo) {
+				if (solo && !lightGun) {
 					ControllerMove1 ();
 				}
 				else {
@@ -45,7 +45,10 @@ public class CursorMove : MonoBehaviour {
 				}
 				break;
 			case 2:
-				ControllerMove1 ();
+				if (lightGun)
+					MouseMove ();
+				else
+					ControllerMove1 ();
 				break;
 			default:
 				break;
@@ -98,7 +101,13 @@ public class CursorMove : MonoBehaviour {
 	void MouseMove() {
 		cursor.transform.position = Input.mousePosition;
 		playerShoot.CheckGun ("Firep1M");
-		playerShoot.Reload ("ReloadM");
-		playerShoot.Shield ("ShieldM");
+		if (!lightGun) {
+			playerShoot.Reload ("ReloadM");
+			playerShoot.Shield ("ShieldM");
+		}
+		else {
+			playerShoot.Reload ("LightgunReload1");
+			playerShoot.Shield ("LightgunShield1");
+		}
 	}
 }

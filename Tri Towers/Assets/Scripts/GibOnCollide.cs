@@ -9,7 +9,7 @@ public class GibOnCollide : MonoBehaviour
 	public bool gibOnTrigger = true;
 	public GameObject[] pickUps;
 	public Transform itemSpawn;
-	public AudioSource a;
+	AudioSource a;
 	Animator anim;
 	bool isAlive;
 
@@ -31,6 +31,9 @@ public class GibOnCollide : MonoBehaviour
 			else
 				JustDie ();
 		}
+
+		if (col.GetComponentInParent<Shoot>().gunType != 2)
+			Destroy (col.gameObject);
 	}
 
 	// Update is called once per frame
@@ -50,20 +53,21 @@ public class GibOnCollide : MonoBehaviour
 		isAlive = false;
 		GetComponentInChildren<EnemiesShootAfterDelay> ().canShoot = false;
 		anim.SetTrigger ("Death");
+		GetComponent<BoxCollider> ().enabled = false;
 		yield return new WaitForSeconds (delay);
 		a.Play ();
 		Instantiate (gib, transform.position, gib.transform.rotation);
-		int random = Random.Range(1,10);
+		int random = Random.Range(0,10);
 		Debug.Log (random);
-		if (random >= 1 && random <= 3) {
+		if (random >= 0 && random <= 1) {
 			GameObject instance = Instantiate (pickUps [0], itemSpawn.position, transform.rotation) as GameObject;
 			instance.transform.SetParent (transform.parent);
 		} 
-		if (random == 4 || random == 5) {
+		if (random == 2 || random == 3) {
 			GameObject instance = Instantiate (pickUps [1], itemSpawn.position, transform.rotation) as GameObject;
 			instance.transform.SetParent (transform.parent);
 		} 
-		if (random == 6 || random == 7) {
+		if (random == 4 || random == 5) {
 			GameObject instance = Instantiate (pickUps [2], itemSpawn.position, transform.rotation) as GameObject;
 		}
 		Destroy (gameObject);

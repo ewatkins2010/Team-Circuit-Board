@@ -119,11 +119,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6687316bc4bcc2c4b885da6186a7c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   gibOnCollision: 1
   p1: {fileID: 0}
   p2: {fileID: 0}
   a: {fileID: 8215602, guid: 85e9fed1fd29eea4286a6407092dca28, type: 2}
+  b: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -133,7 +134,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: speed
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: a

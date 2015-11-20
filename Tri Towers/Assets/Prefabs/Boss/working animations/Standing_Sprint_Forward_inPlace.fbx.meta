@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 82b3d7c9be9279a4e84f632b50a00fa4
-timeCreated: 1447217888
+guid: e93cc71d6d4802847922d689c28d73d1
+timeCreated: 1447970100
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -85,7 +85,7 @@ ModelImporter:
       name: mixamo.com
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 35
+      lastFrame: 17
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

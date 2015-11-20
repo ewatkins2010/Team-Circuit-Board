@@ -48,8 +48,8 @@ public class ScoreBoard : MonoBehaviour {
 	IEnumerator CountUP(){
 		if (!a.isPlaying)
 			a.Play ();
-		p1Score+=15;
-		p2Score+=15;
+		p1Score+=50;
+		p2Score+=50;
 		yield return new WaitForSeconds (0f);
 
 		p1Score = Mathf.Clamp (p1Score, 0, max1);

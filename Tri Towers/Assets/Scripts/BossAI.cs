@@ -8,8 +8,9 @@ public class BossAI : MonoBehaviour {
 	public bool doPatrol, rageMode;
 
 	int curWaypoint, phase;
+	bool wasHit;
 	Vector3 Target, MoveDirection, Velocity;
-	bool canFire;
+	public bool canFire;
 	Animator anim;
 	GameObject player, box1, box2, p1;
 	
@@ -21,9 +22,10 @@ public class BossAI : MonoBehaviour {
 		p1 = GameObject.Find("P1");
 		phase = 1;
 		canFire = true;
+		wasHit = false;
 	}
 	
-	void Update () {
+	void FixedUpdate () {
 		switch (phase) {
 		case 1:
 			Move (Waypoints1);
@@ -53,10 +55,10 @@ public class BossAI : MonoBehaviour {
 	}
 
 	IEnumerator Hit(){
-		canFire = false;
-		GetComponent<BoxCollider> ().enabled = true;
-		//anim.SetTrigger ("Hit");
-		yield return new WaitForSeconds (1f);
+		wasHit = true;
+		GetComponent<BoxCollider> ().enabled = false;
+		anim.SetTrigger ("Hit");
+		yield return new WaitForSeconds (1.6f);
 		phase = 3;
 		doPatrol = true;
 	}
@@ -64,22 +66,25 @@ public class BossAI : MonoBehaviour {
 	IEnumerator DoubleShoot(){
 		canFire = false;
 		Transform target1, target2;
+		anim.SetTrigger ("2Shot");
+		yield return new WaitForSeconds (1.5f);
 		if (p1.GetComponent<CursorMove> ().solo) {
 			target1 = player.transform;
 			Instantiate (bullet, guns[0].position, Quaternion.LookRotation (target1.position - guns[0].position));
-		    Instantiate (bullet, guns[1].position, Quaternion.LookRotation (target1.position - guns[1].position));
+			Instantiate (bullet, guns[1].position, Quaternion.LookRotation (target1.position - guns[1].position));
 		}
 		else {
 			target1 = box1.transform;
 			target2 = box2.transform;
-			Instantiate (bullet, transform.position, Quaternion.LookRotation (target1.position - guns[0].position));
-			Instantiate (bullet, transform.position, Quaternion.LookRotation (target2.position - guns[1].position));
+			Instantiate (bullet, guns[0].position, Quaternion.LookRotation (target1.position - guns[0].position));
+			Instantiate (bullet, guns[1].position, Quaternion.LookRotation (target2.position - guns[1].position));
 		}
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (1.5f);
 		canFire = true;
 	}
 
 	IEnumerator Shoot(){
+
 		canFire = false;
 		Transform target;
 		if (p1.GetComponent<CursorMove> ().solo)
@@ -91,9 +96,12 @@ public class BossAI : MonoBehaviour {
 			else
 				target = box2.transform;
 		}
-		anim.SetTrigger ("1Shot");
-		yield return new WaitForSeconds (2f);
-		Instantiate (bullet, guns[0].position, Quaternion.LookRotation (target.position - guns[0].position));
+		if (!wasHit)
+			anim.SetTrigger("1Shot");
+		yield return new WaitForSeconds (1.3f);
+		if(!wasHit)
+			Instantiate (bullet, guns[0].position, Quaternion.LookRotation (target.position - guns[0].position));
+		yield return new WaitForSeconds (1f);
 		canFire = true;
 	}
 
