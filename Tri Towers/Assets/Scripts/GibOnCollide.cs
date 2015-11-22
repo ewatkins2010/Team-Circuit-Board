@@ -69,6 +69,7 @@ public class GibOnCollide : MonoBehaviour
 		} 
 		if (random == 4 || random == 5) {
 			GameObject instance = Instantiate (pickUps [2], itemSpawn.position, transform.rotation) as GameObject;
+			instance.transform.SetParent (transform.parent);
 		}
 		Destroy (gameObject);
 	}

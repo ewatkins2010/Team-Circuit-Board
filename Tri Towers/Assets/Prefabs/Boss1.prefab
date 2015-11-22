@@ -530,8 +530,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136498}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: 0, y: -.680000007, z: 3.78999996}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.08699989, y: -1.06099999, z: 7.26900005}
+  m_LocalScale: {x: 2.5999999, y: 2.5999999, z: 2.5999999}
   m_Children:
   - {fileID: 486408}
   - {fileID: 437500}
@@ -940,16 +940,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c770a4dc9e70447874e225a6430fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Waypoints1: []
-  Waypoints2: []
+  Waypoints1:
+  - {fileID: 0}
+  - {fileID: 0}
+  Waypoints2:
+  - {fileID: 0}
+  - {fileID: 0}
   guns:
   - {fileID: 464598}
   - {fileID: 483520}
   bullet: {fileID: 185258, guid: cbf97cdfa66f3b34dbf4d7263d4e4186, type: 2}
-  speed: 4
+  explosion: {fileID: 160120, guid: 2f2d4cabc01ea0e429ac1e40c5ed3ad2, type: 2}
+  speed: 6
   doPatrol: 1
   rageMode: 0
-  canFire: 0
+  lastHit: 0
 --- !u!137 &13728886
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1022,6 +1027,10 @@ Prefab:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 160120, guid: 2f2d4cabc01ea0e429ac1e40c5ed3ad2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136498}

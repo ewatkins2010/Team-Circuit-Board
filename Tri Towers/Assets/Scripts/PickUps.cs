@@ -34,6 +34,7 @@ public class PickUps : MonoBehaviour {
 				col.gameObject.GetComponentInParent<Shoot>().ammo = 30;
 				col.gameObject.GetComponentInParent<Shoot>().gunType = 1;
 				col.gameObject.GetComponentInParent<Shoot>().ammoScale = 30;
+				col.gameObject.GetComponentInParent<Shoot>().canFire = true;
 				col.gameObject.GetComponentInParent<HealthScript>().score += 75;
 				break;
 			//this is the shot gun. around 5 bullets is pretty standard I think
@@ -41,6 +42,7 @@ public class PickUps : MonoBehaviour {
 				col.gameObject.GetComponentInParent<Shoot>().ammo = 5;
 				col.gameObject.GetComponentInParent<Shoot>().gunType = 2;
 				col.gameObject.GetComponentInParent<Shoot>().ammoScale = 5;
+				col.gameObject.GetComponentInParent<Shoot>().canFire = true;
 				col.gameObject.GetComponentInParent<HealthScript>().score += 75;
 				break;
 			default:

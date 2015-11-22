@@ -124,7 +124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22492224, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 22492224, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -178,17 +178,17 @@ Prefab:
       propertyPath: shields.Array.data[1]
       value: 
       objectReference: {fileID: 228969239}
-    - target: {fileID: 11445104, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
-      propertyPath: lightGun
-      value: 0
+    - target: {fileID: 22417802, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 11492340, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
-      propertyPath: lightGun
-      value: 1
+    - target: {fileID: 22417802, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.0999985
       objectReference: {fileID: 0}
-    - target: {fileID: 11445104, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
-      propertyPath: solo
-      value: 0
+    - target: {fileID: 22417802, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 91.8000031
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d147867f78aa1ba4296495e8691156ce, type: 2}
@@ -250,7 +250,7 @@ Prefab:
       objectReference: {fileID: 919406970}
     - target: {fileID: 182270, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11443726, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: doPatrol
@@ -428,7 +428,7 @@ Prefab:
       objectReference: {fileID: 919406970}
     - target: {fileID: 182270, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11443726, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: doPatrol
@@ -682,7 +682,7 @@ Prefab:
       objectReference: {fileID: 919406970}
     - target: {fileID: 182270, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11443726, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: doPatrol
@@ -1053,7 +1053,7 @@ Prefab:
       objectReference: {fileID: 919406970}
     - target: {fileID: 182270, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11443726, guid: f1f8c1afbb0c568498520f98689ff0cf, type: 2}
       propertyPath: doPatrol

@@ -22,14 +22,13 @@ public class Shoot : MonoBehaviour {
 	public Image[] gunIcons;
 
 	[HideInInspector]public int shieldHit;
-	[HideInInspector]public bool canShield;
+	[HideInInspector]public bool canShield, canFire;
 	public float ammoScale;
 
 	//tells the gun if it can fire or not;
-	bool canFire;
 	CursorMove playerNumber;
 	AudioSource a, r;
-	int shieldIndex;
+	int shieldIndex, shieldMaxHit;
 	
 	// Use this for initialization
 	void Start ()
@@ -43,10 +42,14 @@ public class Shoot : MonoBehaviour {
 		ammoScale = 5;
 		shieldHit = 0;
 
-		if (playerNumber.solo)
+		if (playerNumber.solo) {
 			shieldIndex = 1;
-		else
+			shieldMaxHit = 6;
+		}
+		else {
 			shieldIndex = 0;
+			shieldMaxHit = 3;
+		}
 	}
 	
 	// Update is called once per frame
@@ -58,7 +61,7 @@ public class Shoot : MonoBehaviour {
 	}
 
 	public void Shield(string button){
-		if (shieldHit >= 3) {
+		if (shieldHit >= shieldMaxHit) {
 			canShield = false;
 			StartCoroutine ("Recharge");
 		}
