@@ -96,7 +96,101 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/pCube9
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/pCube9/transform46
+        weight: 1
+      - path: joint30
+        weight: 1
+      - path: joint30/LT_Leg
+        weight: 1
+      - path: joint30/LT_Leg/joint21
+        weight: 1
+      - path: joint30/LT_Leg/joint21/joint22
+        weight: 1
+      - path: joint30/LT_Leg/joint21/joint22/joint23
+        weight: 1
+      - path: joint30/RT_Leg
+        weight: 1
+      - path: joint30/RT_Leg/joint25
+        weight: 1
+      - path: joint30/RT_Leg/joint25/joint26
+        weight: 1
+      - path: joint30/RT_Leg/joint25/joint26/joint29
+        weight: 1
+      - path: joint30/UP_Body
+        weight: 1
+      - path: joint30/UP_Body/HEAD
+        weight: 1
+      - path: joint30/UP_Body/HEAD/joint27
+        weight: 1
+      - path: joint30/UP_Body/HEAD/joint27/joint28
+        weight: 1
+      - path: joint30/UP_Body/joint3
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint8
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint8/joint9
+        weight: 1
+      - path: joint30/UP_Body/joint31
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint34/joint35
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint36
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint36/joint37
+        weight: 1
+      - path: polySurface33
+        weight: 1
+      - path: polySurface33/transform47
+        weight: 1
+      - path: polySurface45
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

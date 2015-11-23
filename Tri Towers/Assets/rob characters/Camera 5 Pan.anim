@@ -17,14 +17,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: 139.229996, y: 1.26999998, z: -2.43000007}
-        inSlope: {x: .955001831, y: 0, z: 0}
-        outSlope: {x: .955001831, y: 0, z: 0}
+        value: {x: 51.0499992, y: 2.73000002, z: 28.5200005}
+        inSlope: {x: 1.43499947, y: 0, z: 0}
+        outSlope: {x: 1.43499947, y: 0, z: 0}
         tangentMode: 0
       - time: 2
-        value: {x: 141.139999, y: 1.26999998, z: -2.43000007}
-        inSlope: {x: .955001831, y: 0, z: 0}
-        outSlope: {x: .955001831, y: 0, z: 0}
+        value: {x: 53.9199982, y: 2.73000002, z: 28.5200005}
+        inSlope: {x: 1.43499947, y: 0, z: 0}
+        outSlope: {x: 1.43499947, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -68,14 +68,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 139.229996
-        inSlope: .955001831
-        outSlope: .955001831
+        value: 51.0499992
+        inSlope: 1.43499947
+        outSlope: 1.43499947
         tangentMode: 10
       - time: 2
-        value: 141.139999
-        inSlope: .955001831
-        outSlope: .955001831
+        value: 53.9199982
+        inSlope: 1.43499947
+        outSlope: 1.43499947
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -87,12 +87,12 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 1.26999998
+        value: 2.73000002
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 2
-        value: 1.26999998
+        value: 2.73000002
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -106,12 +106,12 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -2.43000007
+        value: 28.5200005
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 2
-        value: -2.43000007
+        value: 28.5200005
         inSlope: 0
         outSlope: 0
         tangentMode: 10
