@@ -37,6 +37,9 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -65,7 +68,6 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -12060,6 +12062,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2334606, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 481998, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -12228,6 +12234,38 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -1.62920685e-07
       objectReference: {fileID: 0}
+    - target: {fileID: 495166, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.88664722
+      objectReference: {fileID: 0}
+    - target: {fileID: 495166, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .335500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 430338, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2.4169085
+      objectReference: {fileID: 0}
+    - target: {fileID: 434608, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.90572715
+      objectReference: {fileID: 0}
+    - target: {fileID: 413740, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 3.12290525
+      objectReference: {fileID: 0}
+    - target: {fileID: 413740, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 4.04268646
+      objectReference: {fileID: 0}
+    - target: {fileID: 413740, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 4.04268742
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334606, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78c3f43a15c1b465c80204fa8ae4370e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b213de2256b0a4cd793f3e648d8f9d87, type: 2}
   m_IsPrefabParent: 0
@@ -18693,7 +18731,6 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
