@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemyWaves.cs" />
      <Compile Include="Assets\Scripts\GameData.cs" />
+     <Compile Include="Assets\Scripts\GameOverScreen.cs" />
      <Compile Include="Assets\Scripts\GibOnCollide.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\IncomingFire.cs" />
