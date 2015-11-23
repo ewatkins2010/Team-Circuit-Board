@@ -19,11 +19,12 @@ public class CameraSwitch : MonoBehaviour {
 
 	IEnumerator SwitchView(float d){
 		yield return new WaitForSeconds (d);
-		cameras [index].SetActive (false);
 
 		if ((index + 1) < cameras.Length) {
 			cameras[index+1].SetActive (true);
-			StartCoroutine (SwitchView (delays[index+1]));
+			cameras [index].SetActive (false);
+			index++;
+			StartCoroutine (SwitchView (delays[index]));
 		}
 	}
 }

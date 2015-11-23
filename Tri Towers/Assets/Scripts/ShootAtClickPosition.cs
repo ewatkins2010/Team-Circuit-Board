@@ -21,7 +21,7 @@ public class ShootAtClickPosition : MonoBehaviour
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			Quaternion rotation = Quaternion.LookRotation(ray.direction);
 
-			Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, GetComponent<Camera>().nearClipPlane));
+//			Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, GetComponent<Camera>().nearClipPlane));
 
 			Rigidbody instance = Instantiate(bullet,transform.position,rotation) as Rigidbody;
 			instance.AddForce(ray.direction*force, forceMode);

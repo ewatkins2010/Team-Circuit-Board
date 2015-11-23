@@ -12,7 +12,7 @@ public class ShootAfterDelay : MonoBehaviour {
 	
 	void Start () 
 	{
-		player = GameObject.FindGameObjectWithTag("Player");
+		//player = GameObject.FindGameObjectWithTag("Player");
 		animator = GetComponentInChildren<Animator>();
 		Invoke ("Shoot", delay);
 	}

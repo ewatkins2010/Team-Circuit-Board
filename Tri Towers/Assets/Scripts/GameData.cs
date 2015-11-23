@@ -6,6 +6,7 @@ public class GameData : MonoBehaviour {
 	public GameObject player2;
 
 	public int score1, score2, nextLevel;
+	public string died;
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (gameObject);
