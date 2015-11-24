@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\CursorMove.cs" />
      <Compile Include="Assets\Scripts\Cutscenes.cs" />
      <Compile Include="Assets\Scripts\DeployColliders.cs" />
+     <Compile Include="Assets\Scripts\DoorTrigger.cs" />
      <Compile Include="Assets\Scripts\EnemiesShootAfterDelay.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemyWaves.cs" />
@@ -68,6 +69,7 @@
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\NodeMovement.cs" />
      <Compile Include="Assets\Scripts\Patrol Scripts\EnemyPatrol.cs" />
+     <Compile Include="Assets\Scripts\Patrol Scripts\TurretPatrol.cs" />
      <Compile Include="Assets\Scripts\Patrol Scripts\Waypoints.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\PickUps.cs" />
