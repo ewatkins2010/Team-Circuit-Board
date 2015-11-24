@@ -1295,8 +1295,8 @@ MonoBehaviour:
   button: {fileID: 571468785}
   testing: 0
   solo: 0
-  max1: 1500
-  max2: 0
+  max1: 15000
+  max2: 10000
   p1ScoreText: {fileID: 1841241101}
   p2ScoreText: {fileID: 2130236610}
   a: {fileID: 384097735}

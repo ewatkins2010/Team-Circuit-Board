@@ -24,16 +24,16 @@ public class GibOnCollide : MonoBehaviour
 	{
 		if(gibOnTrigger && isAlive)
 		{
-			if (col.gameObject.tag == "PlayerBullet" && tag == "Enemy")
+			if (col.gameObject.tag == "PlayerBullet"){
 				col.GetComponentInParent<HealthScript>().score += 100;
-			if (tag == "Enemy")
-				StartCoroutine("GibNow");
-			else
-				JustDie ();
+				if (col.GetComponentInParent<Shoot>().gunType != 2)
+					Destroy (col.gameObject);
+				if (tag == "Enemy")
+					StartCoroutine("GibNow");
+				else
+					JustDie ();
+			}
 		}
-
-		if (col.GetComponentInParent<Shoot>().gunType != 2)
-			Destroy (col.gameObject);
 	}
 
 	// Update is called once per frame

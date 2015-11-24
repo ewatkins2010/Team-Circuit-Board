@@ -8,12 +8,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final/Menus/MainMenu.unity
   - enabled: 1
+    path: Assets/Scenes/Practice/Rob Scene.unity
+  - enabled: 1
     path: Assets/Scenes/Final/Levels/Level1.unity
   - enabled: 1
     path: Assets/Scenes/Final/Levels/Bridge 1.unity
   - enabled: 1
     path: Assets/Scenes/Final/Levels/Level2.unity
   - enabled: 1
-    path: Assets/Scenes/Final/Menus/ScoreScreen.unity
+    path: Assets/Scenes/Final/Levels/Boss_level.unity
   - enabled: 1
-    path: Assets/Scenes/Final/Menus/GameOver.unity
+    path: Assets/Scenes/Final/Levels/Bridge 2.unity
+  - enabled: 1
+    path: Assets/Scenes/Practice/Rob Scene King Intro.unity
+  - enabled: 1
+    path: Assets/Scenes/Final/Levels/Final_level.unity
+  - enabled: 1
+    path: Assets/Scenes/Final/Menus/ScoreScreen.unity

@@ -34,7 +34,14 @@ public class ScoreBoard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if (Input.anyKeyDown) {
+			if (solo)
+				p1Score = max1;
+			else{
+				p1Score = max1;
+				p2Score = max2;
+			}
+		}
 	}
 
 	IEnumerator ActivateScore(){
@@ -48,8 +55,8 @@ public class ScoreBoard : MonoBehaviour {
 	IEnumerator CountUP(){
 		if (!a.isPlaying)
 			a.Play ();
-		p1Score+=50;
-		p2Score+=50;
+		p1Score+=150;
+		p2Score+=150;
 		yield return new WaitForSeconds (0f);
 
 		p1Score = Mathf.Clamp (p1Score, 0, max1);
