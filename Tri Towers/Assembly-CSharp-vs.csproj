@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Branch.cs" />
      <Compile Include="Assets\Scripts\CameraSwitch.cs" />
      <Compile Include="Assets\Scripts\CursorMove.cs" />
+     <Compile Include="Assets\Scripts\CutsceneEnd.cs" />
      <Compile Include="Assets\Scripts\Cutscenes.cs" />
      <Compile Include="Assets\Scripts\DeployColliders.cs" />
      <Compile Include="Assets\Scripts\DoorTrigger.cs" />
