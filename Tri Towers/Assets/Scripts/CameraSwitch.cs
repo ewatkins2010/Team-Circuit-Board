@@ -14,7 +14,6 @@ public class CameraSwitch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 
 	IEnumerator SwitchView(float d){
@@ -25,6 +24,7 @@ public class CameraSwitch : MonoBehaviour {
 			cameras [index].SetActive (false);
 			index++;
 			StartCoroutine (SwitchView (delays[index]));
+			AnimationTrigger.indexCheck = index;
 		}
 	}
 }

@@ -9,13 +9,13 @@ public class HostageGib : MonoBehaviour
 	public bool gibOnTrigger = true;
 	public GameObject[] pickUps;
 	public Transform itemSpawn;
-	AudioSource a;
+//	AudioSource a;
 	Animator anim;
 	bool isAlive;
 	
 	// Use this for initialization
 	void Start () {
-		a = GameObject.Find ("Explosion").GetComponent<AudioSource> ();
+		//a = GameObject.Find ("Explosion").GetComponent<AudioSource> ();
 		anim = GetComponent<Animator> ();
 		isAlive = true;
 	}

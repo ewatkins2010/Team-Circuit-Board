@@ -58,6 +58,7 @@ ModelImporter:
     100100: transform7
     100102: transform8
     100104: transform9
+    100106: group_pasted__pPlane2
     400000: _UNKNOWN_REF_NODE_fosterParent1
     400002: group
     400004: group_pasted__pPlane1
@@ -111,6 +112,7 @@ ModelImporter:
     400100: transform7
     400102: transform8
     400104: transform9
+    400106: group_pasted__pPlane2
     2300000: group_pasted__pPlane1
     2300002: polySurface2
     2300004: polySurface3
@@ -120,6 +122,8 @@ ModelImporter:
     2300012: polySurface7
     2300014: polySurface8
     2300016: polySurface9
+    2300018: //RootNode
+    2300020: group_pasted__pPlane2
     3300000: group_pasted__pPlane1
     3300002: polySurface2
     3300004: polySurface3
@@ -129,6 +133,8 @@ ModelImporter:
     3300012: polySurface7
     3300014: polySurface8
     3300016: polySurface9
+    3300018: //RootNode
+    3300020: group_pasted__pPlane2
     4300000: polySurface2
     4300002: polySurface3
     4300004: polySurface4
@@ -138,6 +144,7 @@ ModelImporter:
     4300012: polySurface8
     4300014: polySurface9
     4300016: group_pasted__pPlane1
+    4300018: group_pasted__pPlane2
     9500000: //RootNode
   materials:
     importMaterials: 1
