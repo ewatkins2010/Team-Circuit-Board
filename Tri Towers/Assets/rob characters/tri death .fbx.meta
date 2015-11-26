@@ -194,7 +194,199 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 67
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/pasted__group1
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface21
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface21/transform32
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface22
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface22/transform31
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface23
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface23/transform30
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface24
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface24/transform29
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface25
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface25/transform28
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface26
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface26/transform27
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface27
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface27/transform26
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface28
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface28/transform25
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface29
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface29/transform24
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface30
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface30/transform23
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface31
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface31/transform22
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface32
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/polySurface32/transform21
+        weight: 1
+      - path: group3/pasted__group1/pasted__pasted__pPyramid23/transform20
+        weight: 1
+      - path: joint30
+        weight: 1
+      - path: joint30/LT_Leg
+        weight: 1
+      - path: joint30/LT_Leg/joint21
+        weight: 1
+      - path: joint30/LT_Leg/joint21/joint22
+        weight: 1
+      - path: joint30/LT_Leg/joint21/joint22/joint23
+        weight: 1
+      - path: joint30/RT_Leg
+        weight: 1
+      - path: joint30/RT_Leg/joint25
+        weight: 1
+      - path: joint30/RT_Leg/joint25/joint26
+        weight: 1
+      - path: joint30/RT_Leg/joint25/joint26/joint29
+        weight: 1
+      - path: joint30/UP_Body
+        weight: 1
+      - path: joint30/UP_Body/HEAD
+        weight: 1
+      - path: joint30/UP_Body/HEAD/joint27
+        weight: 1
+      - path: joint30/UP_Body/HEAD/joint27/joint28
+        weight: 1
+      - path: joint30/UP_Body/joint3
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint8
+        weight: 1
+      - path: joint30/UP_Body/joint3/joint4/joint5/joint8/joint9
+        weight: 1
+      - path: joint30/UP_Body/joint31
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint34/joint35
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint36
+        weight: 1
+      - path: joint30/UP_Body/joint31/joint32/joint33/joint36/joint37
+        weight: 1
+      - path: polySurface211
+        weight: 1
+      - path: polySurface211/polySurface33
+        weight: 1
+      - path: polySurface211/polySurface33/transform45
+        weight: 1
+      - path: polySurface211/polySurface34
+        weight: 1
+      - path: polySurface211/polySurface34/transform44
+        weight: 1
+      - path: polySurface211/polySurface35
+        weight: 1
+      - path: polySurface211/polySurface35/transform43
+        weight: 1
+      - path: polySurface211/polySurface36
+        weight: 1
+      - path: polySurface211/polySurface36/transform42
+        weight: 1
+      - path: polySurface211/polySurface37
+        weight: 1
+      - path: polySurface211/polySurface37/transform41
+        weight: 1
+      - path: polySurface211/polySurface38
+        weight: 1
+      - path: polySurface211/polySurface38/transform40
+        weight: 1
+      - path: polySurface211/polySurface39
+        weight: 1
+      - path: polySurface211/polySurface39/transform39
+        weight: 1
+      - path: polySurface211/polySurface40
+        weight: 1
+      - path: polySurface211/polySurface40/transform38
+        weight: 1
+      - path: polySurface211/polySurface41
+        weight: 1
+      - path: polySurface211/polySurface41/transform37
+        weight: 1
+      - path: polySurface211/polySurface42
+        weight: 1
+      - path: polySurface211/polySurface42/transform36
+        weight: 1
+      - path: polySurface211/polySurface43
+        weight: 1
+      - path: polySurface211/polySurface43/transform35
+        weight: 1
+      - path: polySurface211/polySurface44
+        weight: 1
+      - path: polySurface211/polySurface44/transform34
+        weight: 1
+      - path: polySurface211/transform33
+        weight: 1
+      - path: polySurface331
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -231,10 +423,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

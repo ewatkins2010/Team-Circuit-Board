@@ -670,8 +670,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.560000002, y: -.216999993, z: 10.0100002}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: 2.00999999, y: -.216999993, z: 5.32999992}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 431148}
@@ -874,7 +874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 106864, guid: 60580b51ac324494cb317693e87c12c5, type: 2}
-  delay: 0
+  delay: 1.5
   gibOnCollision: 1
   gibOnTrigger: 1
   pickUps: []
