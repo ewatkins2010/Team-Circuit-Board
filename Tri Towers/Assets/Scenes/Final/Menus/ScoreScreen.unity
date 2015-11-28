@@ -1390,7 +1390,7 @@ MonoBehaviour:
   p1Text: {fileID: 413590203}
   p2Text: {fileID: 55477603}
   button: {fileID: 571468785}
-  testing: 1
+  testing: 0
   solo: 0
   max1: 15000
   max2: 10000
