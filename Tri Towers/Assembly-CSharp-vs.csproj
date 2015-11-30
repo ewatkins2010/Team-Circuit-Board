@@ -47,10 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnimationTrigger.cs" />
+     <Compile Include="Assets\Scripts\AnimationTrigger1.cs" />
      <Compile Include="Assets\Scripts\Banner.cs" />
      <Compile Include="Assets\Scripts\BossAI.cs" />
      <Compile Include="Assets\Scripts\Branch.cs" />
      <Compile Include="Assets\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\Scripts\CameraSwitch1.cs" />
      <Compile Include="Assets\Scripts\CursorMove.cs" />
      <Compile Include="Assets\Scripts\CutsceneEnd.cs" />
      <Compile Include="Assets\Scripts\Cutscenes.cs" />
@@ -63,7 +65,6 @@
      <Compile Include="Assets\Scripts\GameOverScreen.cs" />
      <Compile Include="Assets\Scripts\GibOnCollide.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
-     <Compile Include="Assets\Scripts\Hostage Gib.cs" />
      <Compile Include="Assets\Scripts\IncomingFire.cs" />
      <Compile Include="Assets\Scripts\LookAtTarget.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />

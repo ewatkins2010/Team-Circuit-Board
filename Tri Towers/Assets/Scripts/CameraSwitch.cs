@@ -14,7 +14,6 @@ public class CameraSwitch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print (index);
 	}
 
 	IEnumerator SwitchView(float d){
