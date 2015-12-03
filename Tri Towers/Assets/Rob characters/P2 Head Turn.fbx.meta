@@ -1,72 +1,82 @@
 fileFormatVersion: 2
-guid: 864ce6f87c4cf1841ba1f4996c2b1d7e
-timeCreated: 1448744783
+guid: 1dd094ab563787042a7f4d9f72479d94
+timeCreated: 1449069274
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: HEAD
-    100002: joint21
-    100004: joint22
-    100006: joint23
-    100008: joint25
-    100010: joint26
-    100012: joint27
-    100014: joint28
-    100016: joint29
-    100018: joint3
-    100020: joint30
-    100022: joint31
-    100024: joint32
-    100026: joint33
-    100028: joint34
-    100030: joint35
-    100032: joint36
-    100034: joint37
-    100036: joint4
-    100038: joint5
-    100040: joint6
-    100042: joint7
-    100044: joint8
-    100046: joint9
-    100048: LT_Leg
-    100050: polySurface33
-    100052: RT_Leg
-    100054: //RootNode
-    100056: UP_Body
-    400000: HEAD
-    400002: joint21
-    400004: joint22
-    400006: joint23
-    400008: joint25
-    400010: joint26
-    400012: joint27
-    400014: joint28
-    400016: joint29
-    400018: joint3
-    400020: joint30
-    400022: joint31
-    400024: joint32
-    400026: joint33
-    400028: joint34
-    400030: joint35
-    400032: joint36
-    400034: joint37
-    400036: joint4
-    400038: joint5
-    400040: joint6
-    400042: joint7
-    400044: joint8
-    400046: joint9
-    400048: LT_Leg
-    400050: polySurface33
-    400052: RT_Leg
-    400054: //RootNode
-    400056: UP_Body
-    4300000: polySurface33
+    100000: _UNKNOWN_REF_NODE_fosterParent1
+    100002: HEAD
+    100004: joint21
+    100006: joint22
+    100008: joint23
+    100010: joint25
+    100012: joint26
+    100014: joint27
+    100016: joint28
+    100018: joint29
+    100020: joint3
+    100022: joint30
+    100024: joint31
+    100026: joint32
+    100028: joint33
+    100030: joint34
+    100032: joint35
+    100034: joint36
+    100036: joint37
+    100038: joint4
+    100040: joint5
+    100042: joint6
+    100044: joint7
+    100046: joint8
+    100048: joint9
+    100050: LT_Leg
+    100052: //RootNode
+    100054: pCube9
+    100056: polySurface33
+    100058: polySurface45
+    100060: RT_Leg
+    100062: transform46
+    100064: transform47
+    100066: UP_Body
+    400000: _UNKNOWN_REF_NODE_fosterParent1
+    400002: HEAD
+    400004: joint21
+    400006: joint22
+    400008: joint23
+    400010: joint25
+    400012: joint26
+    400014: joint27
+    400016: joint28
+    400018: joint29
+    400020: joint3
+    400022: joint30
+    400024: joint31
+    400026: joint32
+    400028: joint33
+    400030: joint34
+    400032: joint35
+    400034: joint36
+    400036: joint37
+    400038: joint4
+    400040: joint5
+    400042: joint6
+    400044: joint7
+    400046: joint8
+    400048: joint9
+    400050: LT_Leg
+    400052: //RootNode
+    400054: pCube9
+    400056: polySurface33
+    400058: polySurface45
+    400060: RT_Leg
+    400062: transform46
+    400064: transform47
+    400066: UP_Body
+    4300000: polySurface45
     7400000: Take 001
     9500000: //RootNode
-    13700000: polySurface33
+    13700000: polySurface45
   materials:
     importMaterials: 1
     materialName: 0

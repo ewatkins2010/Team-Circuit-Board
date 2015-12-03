@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 77774d32ae391434ab9f201e5ddc406f
-timeCreated: 1448744510
+guid: b0627098ccd5d0045a78d2664cee41c4
+timeCreated: 1449081063
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: HEAD
-    100002: joint1
-    100004: joint10
-    100006: joint11
-    100008: joint12
-    100010: joint13
-    100012: joint14
-    100014: joint15
-    100016: joint16
-    100018: joint21
-    100020: joint22
-    100022: joint23
-    100024: joint25
-    100026: joint26
-    100028: joint27
-    100030: joint28
-    100032: joint29
-    100034: joint3
+    100002: joint21
+    100004: joint22
+    100006: joint23
+    100008: joint25
+    100010: joint26
+    100012: joint27
+    100014: joint28
+    100016: joint29
+    100018: joint3
+    100020: joint30
+    100022: joint31
+    100024: joint32
+    100026: joint33
+    100028: joint34
+    100030: joint35
+    100032: joint36
+    100034: joint37
     100036: joint4
     100038: joint5
     100040: joint6
@@ -30,34 +30,28 @@ ModelImporter:
     100044: joint8
     100046: joint9
     100048: LT_Leg
-    100050: //RootNode
-    100052: polySurface26
-    100054: polySurface27
-    100056: pSphere1
-    100058: pSphere2
-    100060: RT_Leg
-    100062: transform1
-    100064: transform2
-    100066: transform3
-    100068: UP_Body
+    100050: polySurface33
+    100052: RT_Leg
+    100054: //RootNode
+    100056: UP_Body
     400000: HEAD
-    400002: joint1
-    400004: joint10
-    400006: joint11
-    400008: joint12
-    400010: joint13
-    400012: joint14
-    400014: joint15
-    400016: joint16
-    400018: joint21
-    400020: joint22
-    400022: joint23
-    400024: joint25
-    400026: joint26
-    400028: joint27
-    400030: joint28
-    400032: joint29
-    400034: joint3
+    400002: joint21
+    400004: joint22
+    400006: joint23
+    400008: joint25
+    400010: joint26
+    400012: joint27
+    400014: joint28
+    400016: joint29
+    400018: joint3
+    400020: joint30
+    400022: joint31
+    400024: joint32
+    400026: joint33
+    400028: joint34
+    400030: joint35
+    400032: joint36
+    400034: joint37
     400036: joint4
     400038: joint5
     400040: joint6
@@ -65,20 +59,14 @@ ModelImporter:
     400044: joint8
     400046: joint9
     400048: LT_Leg
-    400050: //RootNode
-    400052: polySurface26
-    400054: polySurface27
-    400056: pSphere1
-    400058: pSphere2
-    400060: RT_Leg
-    400062: transform1
-    400064: transform2
-    400066: transform3
-    400068: UP_Body
-    4300000: polySurface27
+    400050: polySurface33
+    400052: RT_Leg
+    400054: //RootNode
+    400056: UP_Body
+    4300000: polySurface33
     7400000: Take 001
     9500000: //RootNode
-    13700000: polySurface27
+    13700000: polySurface33
   materials:
     importMaterials: 1
     materialName: 0
