@@ -8,6 +8,7 @@ public class HealthScript : MonoBehaviour {
 	public int score;
 
 	public GameObject bar;
+	public string name;
 
 	float healthMax;
     //public static bool isPlayerAlive = true;
@@ -34,7 +35,13 @@ public class HealthScript : MonoBehaviour {
 			health = healthMax;
 		if (health < 0) {
 			health = 0;
-			Camera.main.GetComponent<Pause>().Restart ();
+			if (GetComponent<CursorMove>().testing)
+				Camera.main.GetComponent<Pause>().Restart ();
+			else {
+				GameObject.Find ("GameData").GetComponent<GameData> ().died = name;
+				GameObject.Find ("GameData").GetComponent<GameData> ().nextLevel = Application.loadedLevel;
+				Application.LoadLevel ("GameOver");
+			}
 		}
 	}
 }

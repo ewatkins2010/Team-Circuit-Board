@@ -573,6 +573,7 @@ MonoBehaviour:
   health: 200
   score: 0
   bar: {fileID: 187418}
+  name: Player1
 --- !u!114 &11402448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -599,6 +600,7 @@ MonoBehaviour:
   health: 100
   score: 0
   bar: {fileID: 146132}
+  name: Player2
 --- !u!114 &11404726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1957,6 +1959,10 @@ Prefab:
       propertyPath: bigBullet
       value: 
       objectReference: {fileID: 5470618, guid: eb0c568518c8dba46860e5d70a604882, type: 2}
+    - target: {fileID: 0}
+      propertyPath: name
+      value: Player2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193514}

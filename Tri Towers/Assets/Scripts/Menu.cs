@@ -7,11 +7,15 @@ using UnityEngine.EventSystems;
 public class Menu : MonoBehaviour {
 	public List<GameObject> screens;
 	public EventSystem selection;
+	public Sprite[] images;
+	public Image controls;
 	// Use this for initialization
 	void Start () {
 		selection = GameObject.Find("EventSystem").GetComponent<EventSystem>();
 		for (int i = 0; i < screens.Count; i++) {
-			if (screens[i].gameObject.name != "Main")
+			if (i == 0)
+				screens[i].SetActive (true);
+			else 
 				screens[i].SetActive (false);
 		}
 	}
@@ -39,4 +43,7 @@ public class Menu : MonoBehaviour {
 		selection.SetSelectedGameObject (GameObject.FindGameObjectWithTag("Button"));
 	}
 
+	public void ViewControls(int index){
+		controls.sprite = images [index];
+	}
 }

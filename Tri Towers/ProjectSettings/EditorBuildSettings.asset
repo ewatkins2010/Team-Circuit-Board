@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Levels/Final_level.unity
   - enabled: 1
     path: Assets/Scenes/Final/Menus/ScoreScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/Final/Menus/GameOver.unity
