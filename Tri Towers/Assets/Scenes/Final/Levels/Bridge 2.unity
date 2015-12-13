@@ -3038,7 +3038,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471942, guid: 496faaa6c604246c9a4f32913b873570, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 155386, guid: 496faaa6c604246c9a4f32913b873570, type: 2}
       propertyPath: m_IsActive
@@ -3052,6 +3052,18 @@ Prefab:
       propertyPath: Waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1238984308}
+    - target: {fileID: 471942, guid: 496faaa6c604246c9a4f32913b873570, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 32.777935
+      objectReference: {fileID: 0}
+    - target: {fileID: 471942, guid: 496faaa6c604246c9a4f32913b873570, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 32.7779427
+      objectReference: {fileID: 0}
+    - target: {fileID: 471942, guid: 496faaa6c604246c9a4f32913b873570, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 32.7779427
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 496faaa6c604246c9a4f32913b873570, type: 2}
   m_IsPrefabParent: 0
@@ -3692,14 +3704,14 @@ Transform:
   m_Children:
   - {fileID: 1428656607}
   - {fileID: 872975146}
-  - {fileID: 889579956}
   - {fileID: 2139756622}
-  - {fileID: 82951263}
+  - {fileID: 889579956}
   - {fileID: 1843156845}
+  - {fileID: 82951263}
   - {fileID: 2006296144}
   - {fileID: 1980733161}
-  - {fileID: 1724217569}
   - {fileID: 1966268094}
+  - {fileID: 1724217569}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1001 &1479800955
@@ -5906,6 +5918,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1001 &2068862948
 Prefab:
   m_ObjectHideFlags: 0
