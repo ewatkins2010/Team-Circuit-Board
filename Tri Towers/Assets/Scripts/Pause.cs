@@ -35,6 +35,12 @@ public class Pause : MonoBehaviour {
 		Application.LoadLevel (Application.loadedLevel);
 	}
 
+	public void MainMenu(){
+		isPaused = false;
+		Time.timeScale = 1;
+		Application.LoadLevel (0);
+	}
+
 	public void QuitGame(){
 		Application.Quit ();
 	}

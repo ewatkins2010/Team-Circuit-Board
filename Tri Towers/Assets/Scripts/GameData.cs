@@ -7,9 +7,15 @@ public class GameData : MonoBehaviour {
 
 	public int score1, score2, nextLevel;
 	public string died;
+
+	GameObject clone;
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (gameObject);
+		clone = GameObject.Find ("GameData");
+		if (clone != gameObject) {
+			Destroy (clone);
+		}
 	}
 	
 	// Update is called once per frame
