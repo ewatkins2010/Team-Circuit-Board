@@ -34,7 +34,7 @@ public class GibOnCollide : MonoBehaviour
 				}
 				else if (tag == "Hostage"){
 					col.GetComponentInParent<HealthScript>().score -= 100;
-					col.GetComponentInParent<HealthScript>().health -= 30f;
+					col.GetComponentInParent<HealthScript>().health -= 50f;
 					StartCoroutine("GibNow");
 				}
 				else

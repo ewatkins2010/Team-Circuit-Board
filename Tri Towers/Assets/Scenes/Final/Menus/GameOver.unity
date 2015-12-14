@@ -868,7 +868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1: {fileID: 116384201}
   p2: {fileID: 1169103425}
-  deadPlayer: Player2
+  deadPlayer: Player1
   button: {fileID: 571468785}
   ghosts:
   - {fileID: 922954618}

@@ -23,6 +23,9 @@ public class GameOverScreen : MonoBehaviour {
 			p2.SetActive (false);
 			p1.GetComponent<Animator> ().SetTrigger ("Dead");
 			ghosts[0].SetActive(true);
+			temp = p1.transform.position;
+			temp.x -= 3f;
+			p1.transform.position = temp;
 			StartCoroutine ("ShowButton");
 		} 
 		else {
