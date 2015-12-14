@@ -25,6 +25,7 @@ public class Banner : MonoBehaviour {
 			if (turnGreen)
 				GetComponent<MeshRenderer>().material.mainTexture = colors[1];
 			col.gameObject.GetComponentInParent<HealthScript>().score += 500;
+			GetComponent<Animator>().SetTrigger("Off");
 		}
 	}
 }
