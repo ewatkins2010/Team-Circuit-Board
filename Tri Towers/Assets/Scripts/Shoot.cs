@@ -176,6 +176,7 @@ public class Shoot : MonoBehaviour {
 		}
 		else {
 			canFire = true;
+			reloadText.SetActive (false);
 		}
 
 		ChangeIcon ();

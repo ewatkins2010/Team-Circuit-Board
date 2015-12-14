@@ -5,6 +5,7 @@ public class GibOnCollide : MonoBehaviour
 {
 	public GameObject gib;
 	public float delay;
+	public bool isHostage;
 	public bool gibOnCollision = true;
 	public bool gibOnTrigger = true;
 	public GameObject[] pickUps;
@@ -24,12 +25,18 @@ public class GibOnCollide : MonoBehaviour
 	{
 		if(gibOnTrigger && isAlive)
 		{
-			if (col.gameObject.tag == "PlayerBullet"){
-				col.GetComponentInParent<HealthScript>().score += 100;
+			if (col.gameObject.tag == "PlayerBullet") {
 				if (col.GetComponentInParent<Shoot>().gunType != 2)
 					Destroy (col.gameObject);
-				if (tag == "Enemy")
+				if (tag == "Enemy"){
+					col.GetComponentInParent<HealthScript>().score += 100;
 					StartCoroutine("GibNow");
+				}
+				else if (tag == "Hostage"){
+					col.GetComponentInParent<HealthScript>().score -= 100;
+					col.GetComponentInParent<HealthScript>().health -= 30f;
+					StartCoroutine("GibNow");
+				}
 				else
 					JustDie ();
 			}
@@ -57,8 +64,16 @@ public class GibOnCollide : MonoBehaviour
 		yield return new WaitForSeconds (delay);
 		a.Play ();
 		Instantiate (gib, transform.position, gib.transform.rotation);
+
+		if (!isHostage) {
+			DropItem ();
+		}
+
+		Destroy (gameObject);
+	}
+
+	void DropItem(){
 		int random = Random.Range(0,10);
-		Debug.Log (random);
 		if (random >= 0 && random <= 1) {
 			GameObject instance = Instantiate (pickUps [0], itemSpawn.position, transform.rotation) as GameObject;
 			instance.transform.SetParent (transform.parent);
@@ -71,8 +86,8 @@ public class GibOnCollide : MonoBehaviour
 			GameObject instance = Instantiate (pickUps [2], itemSpawn.position, transform.rotation) as GameObject;
 			instance.transform.SetParent (transform.parent);
 		}
-		Destroy (gameObject);
 	}
+
 	void JustDie(){
 		GetComponent<EnemiesShootAfterDelay> ().canShoot = false;
 		Destroy (gameObject);

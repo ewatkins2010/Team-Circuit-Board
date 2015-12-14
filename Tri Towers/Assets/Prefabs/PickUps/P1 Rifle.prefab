@@ -101,13 +101,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac390e7f3b87987458d607e65635c444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBullet: 1
+  particle: {fileID: 131600, guid: b80e5c74381bf8740aa20d6ccc1c539d, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: isBullet
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 131600, guid: b80e5c74381bf8740aa20d6ccc1c539d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 101806}

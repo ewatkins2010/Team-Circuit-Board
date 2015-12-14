@@ -511,7 +511,7 @@ GameObject:
   - 114: {fileID: 11469690}
   m_Layer: 10
   m_Name: Tri-Hostage Fixed
-  m_TagString: Enemy
+  m_TagString: Hostage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2437,6 +2437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gib: {fileID: 106864, guid: 2562de845bc0a4f7d96201f1fa24f910, type: 2}
   delay: 1
+  isHostage: 1
   gibOnCollision: 1
   gibOnTrigger: 1
   pickUps:
@@ -2526,7 +2527,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: isHostage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Hostage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138148}

@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Projectiles : MonoBehaviour {
-
+	public bool isBullet;
+	public GameObject particle;
 	// Use this for initialization
 	void Start () {
 		Destroy (gameObject, 2f);
@@ -13,7 +14,15 @@ public class Projectiles : MonoBehaviour {
 	
 	}
 
+	void OnTriggerEnter(){
+		if (isBullet)
+			Instantiate (particle, transform.position, transform.rotation);
+	}
+
 	void OnCollisionEnter(Collision col){
+		if (isBullet) {
+			Instantiate (particle, transform.position, transform.rotation);
+		}
 		if (col.gameObject.tag == "EnemyBullet") {
 			GetComponentInParent<HealthScript>().score += 50;
 			if (GetComponentInParent<Shoot>().gunType != 2)
