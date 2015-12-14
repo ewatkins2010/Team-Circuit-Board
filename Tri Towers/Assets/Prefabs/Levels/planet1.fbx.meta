@@ -28,6 +28,8 @@ ModelImporter:
     100040: transform7
     100042: transform8
     100044: transform9
+    100046: group
+    100048: pasted__polySurface1
     400000: pCube1
     400002: pCube2
     400004: pCube3
@@ -51,12 +53,17 @@ ModelImporter:
     400040: transform7
     400042: transform8
     400044: transform9
+    400046: group
+    400048: pasted__polySurface1
     2300000: polySurface1
     2300002: pSphere1
+    2300004: pasted__polySurface1
     3300000: polySurface1
     3300002: pSphere1
+    3300004: pasted__polySurface1
     4300000: pSphere1
     4300002: polySurface1
+    4300004: pasted__polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -67,6 +74,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5

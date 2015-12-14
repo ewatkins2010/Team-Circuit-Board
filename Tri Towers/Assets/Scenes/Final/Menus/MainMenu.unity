@@ -246,9 +246,9 @@ MonoBehaviour:
   selection: {fileID: 0}
   images:
   - {fileID: 21300000, guid: 5c0898ce013d64f0aa7c3bad417663f1, type: 3}
-  - {fileID: 21300000, guid: 8c3095b15a44543c2ac367445969ad31, type: 3}
+  - {fileID: 21300000, guid: 0d3d3b075d65a401fa1d161d8380567c, type: 3}
   - {fileID: 21300000, guid: 2fe6090ff26824bc7a7439f6bf523397, type: 3}
-  - {fileID: 21300000, guid: 957bc201c3d00419799c09e236589873, type: 3}
+  - {fileID: 21300000, guid: a47e6cd20420542f4be955f6881210e8, type: 3}
   controls: {fileID: 132219160}
 --- !u!1 &100985684
 GameObject:
@@ -2540,7 +2540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2129636108
 RectTransform:
   m_ObjectHideFlags: 0
