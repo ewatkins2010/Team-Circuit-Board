@@ -173,6 +173,52 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: cb9fb4565da88428eabdd3e97f466b4c, type: 3}
   m_PrefabInternal: {fileID: 1105373988}
+--- !u!1001 &568850288
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.80000019
+      objectReference: {fileID: 0}
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 452484, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9557134, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b67a9d8ee95954d11ac1e2c89aa92a0d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &571468785
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +412,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1001 &835765038
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.9000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 432590, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4342ea09359bb47068c522b73387f71b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &951328270
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1: {fileID: 116384201}
   p2: {fileID: 1169103425}
-  deadPlayer: Player2
+  deadPlayer: Player1
   button: {fileID: 571468785}
   testing: 0
   solo: 0
